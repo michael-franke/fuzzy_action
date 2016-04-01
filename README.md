@@ -6,3 +6,5 @@ Repo contains:
 
 - psiturk code for two pilot experiments
 - modeling code to generate predictions about use of expressions like "neither tall nor not tall"
+
+The main modeling action takes place in `model_code/main.r`. 
