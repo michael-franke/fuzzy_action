@@ -1,0 +1,176 @@
+---
+title: "Fuzzy action: 2nd pilot "
+output: html_document
+---
+
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=8, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require(dplyr)
+require(ggplot2)
+require(reshape2)
+
+```
+
+```{r}
+d = read.csv('data.csv')
+nr_participants_initial = nlevels(factor(d$id))
+```
+
+
+
+## Experiment
+
+
+
+`r nr_participants_initial` participants were recruited via MTurk on March 30 2016 and paid 0.35 US-Dollar compensation.
+
+Each participant interpreted 1 description for 6 scenarios by adjusting a slider bar. They also rated the naturalness of the description on a 7-point Likert scale. Scenarios and descriptions were presented at random. No two scenarios or descriptions were shown twice. 
+
+Scenarios:
+
+1. US male: *tall* vs *short*
+2. bath: *hot* vs *cold*
+3. movie: *long* vs *short*
+4. laptop: *expensive* vs *cheap*
+5. band: *full* vs *empty*
+6. car: *fast* vs *slow*
+
+Descriptions: 
+
+1. "Q", 
+2. "not-P ", 
+3. "neither Q nor not-P",
+4. "neither P nor Q", 
+5. "neither P nor not-Q",
+6. "not-Q", 
+7. "P"
+8. "P and not-P"
+9. "Q and not-Q"
+
+Here, "P" is either *tall* and "Q" is *short* for scenario "US male".
+
+## Questions of interest
+
+1. Is there a coherent rank order among these descriptions? What is it?
+    - e.g., is "not-Q" interpreted as higher than "neither P nor Q"?
+2. Is there a correlation between the naturalness ratings and the variance in interpretation (by-scenario & by-description)?
+3. Is there lower variance in interpretation for "P and not-P" vs "neither P nor not P"?
+4. Does predicate type (stage-level vs. individual-level) have an effect on naturalness ratings? Here, we care especially for borderline contradictions.
+
+## Exclude some participants
+
+```{r}
+
+d = droplevels(filter(d, ! language %in% c("bulgarian", "Chinese", "Hindi") ))
+nr_excluded_for_language = nr_participants_initial - nlevels(factor(d$id)) 
+
+d$workerID = unlist(sapply(1:nrow(d), function(i) strsplit(as.character(d$id[i]), ":")[[1]][1]))
+d$assignmentID = unlist(sapply(1:nrow(d), function(i) strsplit(as.character(d$id[i]), ":")[[1]][2]))
+
+```
+
+We exclude `r nr_excluded_for_language` participants as not being self-reported native English speakers. We did not have any double takers, so we have a total of `r nr_participants_initial - nr_excluded_for_language` participants. This gives us an expectation of `r round((nr_participants_initial - nr_excluded_for_language) / 9,2)` answers per scenario-description pair.
+
+## Vizualize results
+
+Interpretations:
+
+```{r, echo = FALSE}
+d = d %>%
+  mutate(id = as.numeric(factor(id)),
+         expressionLabel = factor(expressionLabel, ordered = TRUE, 
+                                  levels = c("Q", 
+                                             "not-P ", 
+                                             "Q and not-Q", 
+                                             "neither Q nor not-Q", 
+                                             "neither P nor Q", 
+                                             "neither P nor not-P", 
+                                             "P and not-P",
+                                             "not-Q", 
+                                             "P")),
+         answerRescaled = (answer - minValue)/ (maxValue-minValue)) %>% 
+  group_by(id, scenarioLabel) %>%
+  mutate(rank = rank(answer))
+
+interpretation_plot = ggplot(d, aes(y = answerRescaled, x = factor(expressionLabel))) + 
+  geom_boxplot() + 
+  facet_grid(scenarioLabel ~ ., scales = "free") + 
+  coord_flip() + xlab("expression") + ylab("interpretation (rescaled)")
+show(interpretation_plot)
+
+```
+
+Ranks of means of interpretations, plotted against "expectation":
+
+```{r}
+mean_interpretation_ranks = d %>% group_by(scenarioLabel, expressionLabel) %>%
+  summarize(mean_interpretation = mean(answer)) %>%
+  group_by(scenarioLabel) %>%
+  mutate(rank_of_means = rank(mean_interpretation))
+
+mean_interpretation_ranks_plot = ggplot(mean_interpretation_ranks,
+                                        aes(x = expressionLabel,
+                                            y = rank_of_means)) +
+  geom_point() + facet_wrap(~ scenarioLabel, nrow = 2) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) + geom_abline(intercept = 0, color = "gray")
+show(mean_interpretation_ranks_plot)
+```
+
+
+Rank order of means of interpretations, by scenario:
+
+```{r}
+mean_interpretation_ranks_plot_text = ggplot(mean_interpretation_ranks,
+                                             aes(x = rank_of_means,
+                                                 y = 1,
+                                                 label = expressionLabel,
+                                                 color = expressionLabel)) +
+  geom_text() + facet_wrap(~ scenarioLabel, nrow = 2) + coord_flip()
+show(mean_interpretation_ranks_plot_text)
+```
+
+
+Naturalness ratings:
+
+```{r}
+naturalness_plot = ggplot(d, aes(y = naturalness, x = factor(expressionLabel))) + 
+  geom_boxplot() + 
+  facet_grid(scenarioLabel ~ .) + 
+  coord_flip() + xlab("expression") + ylab("naturalness")
+show(naturalness_plot)
+```
+
+Rank order of naturalness ratings:
+
+```{r}
+mean_naturalness_ranks = d %>% group_by(scenarioLabel, expressionLabel) %>%
+  summarize(mean_naturalness = mean(naturalness)) %>%
+  group_by(scenarioLabel) %>%
+  mutate(rank_of_naturalness = rank(mean_naturalness, ties.method = "average"))
+
+mean_naturalness_ranks_plot_text = ggplot(mean_naturalness_ranks,
+                                             aes(x = rank_of_naturalness,
+                                                 y = 1,
+                                                 label = expressionLabel,
+                                                 color = expressionLabel)) +
+  geom_text() + facet_wrap(~ scenarioLabel, nrow = 2) + coord_flip()
+show(mean_naturalness_ranks_plot_text)
+
+```
+
+
+
+Variance in interpretations against naturalness:
+
+```{r}
+correlation_data = d %>% group_by(scenarioLabel, expressionLabel, predicateType) %>%
+  summarize(mean_naturalness = mean(naturalness),
+            variance_interpretation = var(answerRescaled))
+
+correlation_plot = ggplot(correlation_data, aes(x = mean_naturalness, y = variance_interpretation)) +
+  geom_point()
+show(correlation_plot)
+```
+

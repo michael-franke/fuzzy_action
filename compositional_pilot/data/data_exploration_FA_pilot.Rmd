@@ -1,0 +1,72 @@
+---
+title: "Fuzzy action: pilot"
+output: html_document
+---
+
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=6, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require(dplyr)
+require(ggplot2)
+require(reshape2)
+
+```
+
+
+## Experiment
+
+9 participants recruited via MTurk on March 25 2016. Paid 0.60 US-Dollar compensation.
+
+Each participant interpreted 7 descriptions each for 4 scenarios by selection one of 15 intervals of values (from previous experiment by Ciyang and Michael). Scenarios were presented at random. Then all 7 descriptions for that scenario at random.
+
+Scenarios:
+
+1. male NBA basketball player: *tall* vs *short*
+2. female gymnast: *tall* vs *short*
+3. blockbuster movie: *long* vs *short*
+4. radio song: *long* vs *short*
+
+Descriptions: 
+
+1. "Q", 
+2. "not-P ", 
+3. "neither Q nor not-P",
+4. "neither P nor Q", 
+5. "neither P nor not-Q",
+6. "not-Q", 
+7. "P"
+
+Here, "P" is either *tall* or *long* and "Q" is *short*
+
+
+
+## Motivation
+
+Is there a coherent rank order among these descriptions? What is it?
+
+## Results
+
+Mean interval choices:
+
+```{r, echo = FALSE}
+d = read.csv('data.csv') %>%
+  mutate(id = as.numeric(factor(id)),
+         expressionLabel = factor(expressionLabel, ordered = TRUE, 
+                                  levels = c("Q", "not-P ", "neither Q nor not-P",
+                                             "neither P nor Q", "neither P nor not-Q", "not-Q", "P"))) %>% 
+  group_by(id, scenarioLabel) %>%
+  mutate(rank = rank(answer))
+
+p = ggplot(d, aes(y = answer, x = factor(expressionLabel))) + geom_boxplot() + facet_grid(scenarioLabel ~ .) + coord_flip()
+show(p)
+
+```
+
+Rank of interval choices against expected rank order by participants:
+
+```{r}
+q = ggplot(d, aes(x = expressionLabel, y = rank)) + geom_point() + facet_grid(id ~ scenarioLabel) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+show(q)
+```

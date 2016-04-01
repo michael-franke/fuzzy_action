@@ -1,0 +1,43 @@
+id,itemTime,language,trial,antonymPair,scenarioLabel,expressionLabel,expression,predicateType,minValue,maxValue,startingValue,answer,naturalness,RT,engagement,difficulty,comments
+debugO5A37F:debugUJB95N,1459341432113,jermaine,1,expensive,laptop,not-P ,not expensive,individual,50,4000,2622,4000,7,7350,5,5,2
+debugO5A37F:debugUJB95N,1459341438220,jermaine,2,full,band,Q and not-Q,empty and not empty,stage,0,1200,31,0,1,6106,5,5,2
+debugO5A37F:debugUJB95N,1459341444520,jermaine,3,tall,US male,not-Q,not short,individual,50,250,113,50,1,6299,5,5,2
+debugO5A37F:debugUJB95N,1459341447896,jermaine,4,long,movie,neither Q nor not-Q,neither short nor not short,individual,50,400,260,400,7,3375,5,5,2
+debugO5A37F:debugUJB95N,1459341451181,jermaine,5,hot,bath,P and not-P,hot and not hot,stage,10,200,21,96,3,3285,5,5,2
+debugO5A37F:debugUJB95N,1459341454387,jermaine,6,fast,car,Q,slow,stage,1,200,120,25,7,3206,5,5,2
+debug2YLHRL:debug59MDBZ,1459346670116,english,1,hot,bath,neither P nor Q,neither hot nor cold,stage,32,212,134,87,2,3334,3,3,??
+debug2YLHRL:debug59MDBZ,1459346673681,english,2,long,movie,Q,short,individual,50,240,61,107,5,3564,3,3,??
+debug2YLHRL:debug59MDBZ,1459346676145,english,3,expensive,laptop,P and not-P,expensive and not expensive,individual,50,4000,454,2755,4,2463,3,3,??
+debug2YLHRL:debug59MDBZ,1459346679632,english,4,tall,US male,not-P ,not tall,individual,48,96,83,64,3,3486,3,3,??
+debug2YLHRL:debug59MDBZ,1459346682276,english,5,full,band,P,full,stage,0,1200,908,990,6,2643,3,3,??
+debug2YLHRL:debug59MDBZ,1459346684391,english,6,fast,car,neither Q nor not-Q,neither slow nor not slow,stage,0,120,43,16,3,2114,3,3,??
+debugFVI5N2:debugQ3RVAT,1459346617531,dsscscds,1,long,movie,Q,short,individual,50,240,196,170,5,3109,4,8,dvwwdwdv
+debugFVI5N2:debugQ3RVAT,1459346619792,dsscscds,2,full,band,not-P ,not full,stage,0,1200,1151,238,3,2259,4,8,dvwwdwdv
+debugFVI5N2:debugQ3RVAT,1459346622042,dsscscds,3,fast,car,P and not-P,fast and not fast,stage,0,120,0,59,6,2249,4,8,dvwwdwdv
+debugFVI5N2:debugQ3RVAT,1459346624258,dsscscds,4,expensive,laptop,neither P nor Q,neither expensive nor cheap,individual,50,4000,3009,1881,4,2215,4,8,dvwwdwdv
+debugFVI5N2:debugQ3RVAT,1459346626531,dsscscds,5,tall,US male,neither Q nor not-Q,neither short nor not short,individual,48,96,95,58,2,2272,4,8,dvwwdwdv
+debugFVI5N2:debugQ3RVAT,1459346629535,dsscscds,6,hot,bath,not-Q,not cold,stage,32,212,173,156,6,3004,4,8,dvwwdwdv
+debug8L7QRP:debugUOY136,1459342112430,wvveqqe,1,fast,car,not-P ,not fast,stage,1,200,103,36,1,36375,4,5,
+debug8L7QRP:debugUOY136,1459342135876,wvveqqe,2,long,movie,P and not-P,long and not long,individual,50,400,31,115,3,23444,4,5,
+debug8L7QRP:debugUOY136,1459342151896,wvveqqe,3,hot,bath,neither Q nor not-Q,neither cold nor not cold,stage,10,200,172,105,2,16019,4,5,
+debug8L7QRP:debugUOY136,1459342164215,wvveqqe,4,expensive,laptop,Q and not-Q,cheap and not cheap,individual,50,4000,2921,1053,1,12319,4,5,
+debug8L7QRP:debugUOY136,1459342185658,wvveqqe,5,tall,US male,not-Q,not short,individual,50,250,121,72,7,21443,4,5,
+debug8L7QRP:debugUOY136,1459342201071,wvveqqe,6,full,band,neither P nor not-P,neither full nor not full,stage,0,1200,4,1028,2,15413,4,5,
+debug8L7QRP:debugUOY136,1459343847309,wvveqqe,1,hot,bath,neither P nor not-P,neither hot nor not hot,stage,32,212,92,115,4,238974,4,5,
+debug8L7QRP:debugUOY136,1459343860662,wvveqqe,2,expensive,laptop,P,expensive,individual,50,4000,376,3726,4,13352,4,5,
+debug8L7QRP:debugUOY136,1459343892995,wvveqqe,3,fast,car,neither P nor Q,neither fast nor slow,stage,0,120,56,39,3,32332,4,5,
+debug8L7QRP:debugUOY136,1459343902828,wvveqqe,4,long,movie,not-P ,not long,individual,50,240,217,103,6,9832,4,5,
+debug8L7QRP:debugUOY136,1459343913460,wvveqqe,5,tall,US male,not-Q,not short,individual,48,96,90,71,6,10631,4,5,
+debug8L7QRP:debugUOY136,1459343924372,wvveqqe,6,full,band,Q and not-Q,empty and not empty,stage,0,1200,325,164,2,10911,4,5,
+debug8L7QRP:debugUOY136,1459343971860,wvveqqe,1,full,band,not-Q,not empty,stage,0,1200,575,959,3,7712,4,5,
+debug8L7QRP:debugUOY136,1459343980376,wvveqqe,2,expensive,laptop,not-P ,not expensive,individual,50,4000,2028,536,3,8515,4,5,
+debug8L7QRP:debugUOY136,1459343985136,wvveqqe,3,tall,US male,neither Q nor not-Q,neither short nor not short,individual,48,96,61,66,4,4758,4,5,
+debug8L7QRP:debugUOY136,1459343989827,wvveqqe,4,fast,car,P,fast,stage,0,120,104,52,4,4691,4,5,
+debug8L7QRP:debugUOY136,1459343993652,wvveqqe,5,long,movie,Q,short,individual,50,240,98,135,4,3824,4,5,
+debug8L7QRP:debugUOY136,1459343997927,wvveqqe,6,hot,bath,neither P nor not-P,neither hot nor not hot,stage,32,212,181,103,3,4274,4,5,
+debug0TRJX5:debugYMGZSC,1459346643509,asdf,1,full,band,not-P ,not full,stage,0,1200,855,269,2,2197,5,5,asdf
+debug0TRJX5:debugYMGZSC,1459346645623,asdf,2,expensive,laptop,not-Q,not cheap,individual,50,4000,832,2383,4,2113,5,5,asdf
+debug0TRJX5:debugYMGZSC,1459346647783,asdf,3,long,movie,Q,short,individual,50,240,60,90,3,2160,5,5,asdf
+debug0TRJX5:debugYMGZSC,1459346649684,asdf,4,fast,car,neither P nor Q,neither fast nor slow,stage,0,120,1,70,5,1901,5,5,asdf
+debug0TRJX5:debugYMGZSC,1459346651777,asdf,5,tall,US male,P and not-P,tall and not tall,individual,48,96,77,58,3,2091,5,5,asdf
+debug0TRJX5:debugYMGZSC,1459346654027,asdf,6,hot,bath,P,hot,stage,32,212,74,132,5,2250,5,5,asdf
