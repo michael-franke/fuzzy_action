@@ -1,0 +1,229 @@
+id,itemTime,language,trial,antonymPair,scenarioLabel,expressionLabel,expression,predicateType,labelLower,labelHigher,startingValue,answer,naturalness,RT,engagement,difficulty,comments
+AK0Y6OITL7VGX:3IUZPWIU1PF1OQGV70FATKLNHELKWD,1459782094879,English,1,long,movie,neither P nor not-P,neither long nor not long,individual,extremely short,extremely long,0.9544193671438392,0.511,2,19148,5,0,no
+AK0Y6OITL7VGX:3IUZPWIU1PF1OQGV70FATKLNHELKWD,1459782105522,English,2,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.17343094097861944,0.508,2,10642,5,0,no
+AK0Y6OITL7VGX:3IUZPWIU1PF1OQGV70FATKLNHELKWD,1459782113243,English,3,tall,US male,not-P ,not tall,individual,extremely short,extremely tall,0.6506700703946302,0.208,7,7720,5,0,no
+AK0Y6OITL7VGX:3IUZPWIU1PF1OQGV70FATKLNHELKWD,1459782126904,English,4,hot,bath,not-Q,not cold,stage,extremely cold,extremely hot,0.654508091531337,0.702,7,13660,5,0,no
+AK0Y6OITL7VGX:3IUZPWIU1PF1OQGV70FATKLNHELKWD,1459782138519,English,5,full,band,P,full,stage,no one,sold out,0.17495542568829503,1.0,7,11614,5,0,no
+AK0Y6OITL7VGX:3IUZPWIU1PF1OQGV70FATKLNHELKWD,1459782149617,English,6,fast,car,P and not-P,fast and not fast,stage,extremely slow,extremely fast,0.8503748611999071,0.507,1,11097,5,0,no
+AOUBZSI237USA:3QY5DC2MXSSDG0ZCBP9CVJ8LO2UFU8,1459781768687,English,1,hot,bath,Q and not-Q,cold and not cold,stage,extremely cold,extremely hot,0.6668248737790825,0.495,2,13548,8,0,Thanks :)
+AOUBZSI237USA:3QY5DC2MXSSDG0ZCBP9CVJ8LO2UFU8,1459781786069,English,2,full,band,not-P ,not full,stage,no one,sold out,0.21222440394474562,0.651,4,17380,8,0,Thanks :)
+AOUBZSI237USA:3QY5DC2MXSSDG0ZCBP9CVJ8LO2UFU8,1459781795141,English,3,long,movie,P,long,individual,extremely short,extremely long,0.02947449520498835,0.785,6,9070,8,0,Thanks :)
+AOUBZSI237USA:3QY5DC2MXSSDG0ZCBP9CVJ8LO2UFU8,1459781803448,English,4,expensive,laptop,not-Q,not cheap,individual,almost nothing,an enormous amount,0.5057240943665517,0.742,6,8306,8,0,Thanks :)
+AOUBZSI237USA:3QY5DC2MXSSDG0ZCBP9CVJ8LO2UFU8,1459781810728,English,5,fast,car,neither Q nor not-Q,neither slow nor not slow,stage,extremely slow,extremely fast,0.5193165909112478,0.498,2,7279,8,0,Thanks :)
+AOUBZSI237USA:3QY5DC2MXSSDG0ZCBP9CVJ8LO2UFU8,1459781822664,English,6,tall,US male,Q,short,individual,extremely short,extremely tall,0.8305153285522915,0.213,6,11934,8,0,Thanks :)
+A129FZ067I43UD:3OWEPKL08AKN6H0XW5ZETW3AIII7N4,1459781361519,English,1,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.8858437365420821,0.484,3,21135,10,0,
+A129FZ067I43UD:3OWEPKL08AKN6H0XW5ZETW3AIII7N4,1459781378445,English,2,full,band,Q,empty,stage,no one,sold out,0.5041994190490635,0.0,4,16924,10,0,
+A129FZ067I43UD:3OWEPKL08AKN6H0XW5ZETW3AIII7N4,1459781387305,English,3,fast,car,Q and not-Q,slow and not slow,stage,extremely slow,extremely fast,0.7825134094702986,0.486,1,8858,10,0,
+A129FZ067I43UD:3OWEPKL08AKN6H0XW5ZETW3AIII7N4,1459781403113,English,4,long,movie,not-Q,not short,individual,extremely short,extremely long,0.4282726834988684,0.635,4,15806,10,0,
+A129FZ067I43UD:3OWEPKL08AKN6H0XW5ZETW3AIII7N4,1459781418746,English,5,hot,bath,neither P nor not-P,neither hot nor not hot,stage,extremely cold,extremely hot,0.39232102249497003,0.5,2,15632,10,0,
+A129FZ067I43UD:3OWEPKL08AKN6H0XW5ZETW3AIII7N4,1459781428576,English,6,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.36171201855569035,0.512,1,9829,10,0,
+A2389DERMNF3ZB:3M0BCWMB8W40VNC11N2HUH2XUKCBWK,1459782232406,English,1,hot,bath,Q,cold,stage,extremely cold,extremely hot,0.4842131959231577,0.174,7,13857,8,0,"no comments
+"
+A2389DERMNF3ZB:3M0BCWMB8W40VNC11N2HUH2XUKCBWK,1459782250919,English,2,long,movie,P and not-P,long and not long,individual,extremely short,extremely long,0.9752027405555437,0.523,2,18511,8,0,"no comments
+"
+A2389DERMNF3ZB:3M0BCWMB8W40VNC11N2HUH2XUKCBWK,1459782263280,English,3,fast,car,not-Q,not slow,stage,extremely slow,extremely fast,0.8115693767407677,0.567,2,12360,8,0,"no comments
+"
+A2389DERMNF3ZB:3M0BCWMB8W40VNC11N2HUH2XUKCBWK,1459782278408,English,4,tall,US male,neither P nor Q,neither tall nor short,individual,extremely short,extremely tall,0.2835439172472607,0.508,4,15125,8,0,"no comments
+"
+A2389DERMNF3ZB:3M0BCWMB8W40VNC11N2HUH2XUKCBWK,1459782292771,English,5,full,band,Q and not-Q,empty and not empty,stage,no one,sold out,0.8412833467214116,0.342,1,14361,8,0,"no comments
+"
+A2389DERMNF3ZB:3M0BCWMB8W40VNC11N2HUH2XUKCBWK,1459782300951,English,6,expensive,laptop,neither P nor not-P,neither expensive nor not expensive,individual,almost nothing,an enormous amount,0.2277091812462133,0.299,2,8176,8,0,"no comments
+"
+A1BYG5EFRULJ1W:3QY5DC2MXSSDG0ZCBP9CVJ8LO2TFU7,1459780586214,English,1,full,band,Q,empty,stage,no one,sold out,0.31780306472347364,0.0,7,34669,7,2,
+A1BYG5EFRULJ1W:3QY5DC2MXSSDG0ZCBP9CVJ8LO2TFU7,1459780612086,English,2,tall,US male,not-Q,not short,individual,extremely short,extremely tall,0.11423099120630265,0.722,2,25868,7,2,
+A1BYG5EFRULJ1W:3QY5DC2MXSSDG0ZCBP9CVJ8LO2TFU7,1459780627481,English,3,hot,bath,neither P nor not-P,neither hot nor not hot,stage,extremely cold,extremely hot,0.4965494748226612,0.498,1,15391,7,2,
+A1BYG5EFRULJ1W:3QY5DC2MXSSDG0ZCBP9CVJ8LO2TFU7,1459780657458,English,4,expensive,laptop,neither P nor Q,neither expensive nor cheap,individual,almost nothing,an enormous amount,0.38060140050371893,0.5,5,29969,7,2,
+A1BYG5EFRULJ1W:3QY5DC2MXSSDG0ZCBP9CVJ8LO2TFU7,1459780673086,English,5,long,movie,Q and not-Q,short and not short,individual,extremely short,extremely long,0.27772182012992674,0.511,1,15623,7,2,
+A1BYG5EFRULJ1W:3QY5DC2MXSSDG0ZCBP9CVJ8LO2TFU7,1459780690014,English,6,fast,car,P,fast,stage,extremely slow,extremely fast,0.4432253621120238,0.851,6,16924,7,2,
+AYCLMGBGZN95I:3SKRO2GZ72Z8NP0SACQP0UVTL1CK1E,1459782139027,English,1,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.9495440083296778,0.471,2,8825,4,7,No
+AYCLMGBGZN95I:3SKRO2GZ72Z8NP0SACQP0UVTL1CK1E,1459782146870,English,2,long,movie,not-P ,not long,individual,extremely short,extremely long,0.15269161016374455,0.17,3,7840,4,7,No
+AYCLMGBGZN95I:3SKRO2GZ72Z8NP0SACQP0UVTL1CK1E,1459782156286,English,3,fast,car,Q,slow,stage,extremely slow,extremely fast,0.666295413364673,0.346,4,9414,4,7,No
+AYCLMGBGZN95I:3SKRO2GZ72Z8NP0SACQP0UVTL1CK1E,1459782166830,English,4,full,band,Q and not-Q,empty and not empty,stage,no one,sold out,0.5696100007323477,0.262,1,10543,4,7,No
+AYCLMGBGZN95I:3SKRO2GZ72Z8NP0SACQP0UVTL1CK1E,1459782174671,English,5,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.9147201655781161,0.469,5,7839,4,7,No
+AYCLMGBGZN95I:3SKRO2GZ72Z8NP0SACQP0UVTL1CK1E,1459782180304,English,6,hot,bath,neither P nor Q,neither hot nor cold,stage,extremely cold,extremely hot,0.30522121938421853,0.518,5,5631,4,7,No
+A2WKZI3JQCE3Z6:3TVSS0C0E280R96I19T2UB8J0RBWTU,1459780745903,English,1,long,movie,P and not-P,long and not long,individual,extremely short,extremely long,0.7296270952394279,0.485,1,9463,1,1,No.
+A2WKZI3JQCE3Z6:3TVSS0C0E280R96I19T2UB8J0RBWTU,1459780752607,English,2,hot,bath,Q and not-Q,cold and not cold,stage,extremely cold,extremely hot,0.80694386540305,0.496,1,6699,1,1,No.
+A2WKZI3JQCE3Z6:3TVSS0C0E280R96I19T2UB8J0RBWTU,1459780765254,English,3,full,band,Q,empty,stage,no one,sold out,0.7650011252317672,0.0,2,12640,1,1,No.
+A2WKZI3JQCE3Z6:3TVSS0C0E280R96I19T2UB8J0RBWTU,1459780777828,English,4,tall,US male,not-Q,not short,individual,extremely short,extremely tall,0.7293420677760475,0.726,6,12571,1,1,No.
+A2WKZI3JQCE3Z6:3TVSS0C0E280R96I19T2UB8J0RBWTU,1459780790459,English,5,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.47978163037922783,0.476,2,12625,1,1,No.
+A2WKZI3JQCE3Z6:3TVSS0C0E280R96I19T2UB8J0RBWTU,1459780797158,English,6,fast,car,neither P nor not-P,neither fast nor not fast,stage,extremely slow,extremely fast,0.9246147567435027,0.498,1,6693,1,1,No.
+A002160837SWJFPIAI7L7:36W0OB37HXMEGVKSC2WKFWZD6ZLZHE,1459781455014,English,1,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.3955234846732587,0.477,4,8140,4,1,
+A002160837SWJFPIAI7L7:36W0OB37HXMEGVKSC2WKFWZD6ZLZHE,1459781461584,English,2,expensive,laptop,not-Q,not cheap,individual,almost nothing,an enormous amount,0.36654050811566274,0.74,7,6569,4,1,
+A002160837SWJFPIAI7L7:36W0OB37HXMEGVKSC2WKFWZD6ZLZHE,1459781469497,English,3,fast,car,Q and not-Q,slow and not slow,stage,extremely slow,extremely fast,0.43835315017686427,0.477,1,7911,4,1,
+A002160837SWJFPIAI7L7:36W0OB37HXMEGVKSC2WKFWZD6ZLZHE,1459781473953,English,4,tall,US male,Q,short,individual,extremely short,extremely tall,0.3191568080809226,0.289,7,4456,4,1,
+A002160837SWJFPIAI7L7:36W0OB37HXMEGVKSC2WKFWZD6ZLZHE,1459781485389,English,5,full,band,P,full,stage,no one,sold out,0.6396145339664514,1.0,7,11435,4,1,
+A002160837SWJFPIAI7L7:36W0OB37HXMEGVKSC2WKFWZD6ZLZHE,1459781494069,English,6,hot,bath,neither P nor Q,neither hot nor cold,stage,extremely cold,extremely hot,0.9763545611156381,0.485,4,8679,4,1,
+A2UF2FRGVW4T89:3XM0HYN6NL78IHRKZSQC3V0M4KMEPS,1459782377825,English,1,fast,car,P and not-P,fast and not fast,stage,extremely slow,extremely fast,0.5185891042543322,0.489,1,17207,8,4,Thanks for the opportunity.
+A2UF2FRGVW4T89:3XM0HYN6NL78IHRKZSQC3V0M4KMEPS,1459782385498,English,2,tall,US male,Q,short,individual,extremely short,extremely tall,0.5118497015025596,0.198,7,7671,8,4,Thanks for the opportunity.
+A2UF2FRGVW4T89:3XM0HYN6NL78IHRKZSQC3V0M4KMEPS,1459782396229,English,3,hot,bath,Q and not-Q,cold and not cold,stage,extremely cold,extremely hot,0.22488118111671196,0.502,1,10731,8,4,Thanks for the opportunity.
+A2UF2FRGVW4T89:3XM0HYN6NL78IHRKZSQC3V0M4KMEPS,1459782406424,English,4,long,movie,neither P nor Q,neither long nor short,individual,extremely short,extremely long,0.20919433328185533,0.506,6,10195,8,4,Thanks for the opportunity.
+A2UF2FRGVW4T89:3XM0HYN6NL78IHRKZSQC3V0M4KMEPS,1459782415646,English,5,full,band,not-P ,not full,stage,no one,sold out,0.053739223900948874,0.21,7,9207,8,4,Thanks for the opportunity.
+A2UF2FRGVW4T89:3XM0HYN6NL78IHRKZSQC3V0M4KMEPS,1459782422262,English,6,expensive,laptop,P,expensive,individual,almost nothing,an enormous amount,0.5919183260900449,0.817,7,6616,8,4,Thanks for the opportunity.
+ABE0TGK79GGLA:3FE2ERCCZYGUU849T6T887U08MSOP6,1459781057280,English,1,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.8122984095185015,0.509,2,24712,6,5,
+ABE0TGK79GGLA:3FE2ERCCZYGUU849T6T887U08MSOP6,1459781066903,English,2,fast,car,neither P nor not-P,neither fast nor not fast,stage,extremely slow,extremely fast,0.4002203828512252,0.516,2,9622,6,5,
+ABE0TGK79GGLA:3FE2ERCCZYGUU849T6T887U08MSOP6,1459781081807,English,3,long,movie,not-P ,not long,individual,extremely short,extremely long,0.40945951283809334,0.332,6,14903,6,5,
+ABE0TGK79GGLA:3FE2ERCCZYGUU849T6T887U08MSOP6,1459781100088,English,4,full,band,P,full,stage,no one,sold out,0.8990822776733849,0.917,6,18277,6,5,
+ABE0TGK79GGLA:3FE2ERCCZYGUU849T6T887U08MSOP6,1459781112432,English,5,hot,bath,P and not-P,hot and not hot,stage,extremely cold,extremely hot,0.9627125226576585,0.508,1,12342,6,5,
+ABE0TGK79GGLA:3FE2ERCCZYGUU849T6T887U08MSOP6,1459781124296,English,6,tall,US male,Q,short,individual,extremely short,extremely tall,0.3376502571539015,0.308,6,11863,6,5,
+A321AGEY23DDEH:36TFCYNS45IPB0KDBK8ZIBJ2YZNHXZ,1459782396669,English,1,full,band,Q,empty,stage,no one,sold out,0.004014223454142485,0.0,7,8491,10,0,
+A321AGEY23DDEH:36TFCYNS45IPB0KDBK8ZIBJ2YZNHXZ,1459782409080,English,2,expensive,laptop,not-Q,not cheap,individual,almost nothing,an enormous amount,0.6233838592927929,0.524,7,12409,10,0,
+A321AGEY23DDEH:36TFCYNS45IPB0KDBK8ZIBJ2YZNHXZ,1459782418944,English,3,fast,car,neither P nor not-P,neither fast nor not fast,stage,extremely slow,extremely fast,0.3427590235362812,0.522,3,9861,10,0,
+A321AGEY23DDEH:36TFCYNS45IPB0KDBK8ZIBJ2YZNHXZ,1459782424794,English,4,hot,bath,P,hot,stage,extremely cold,extremely hot,0.537887822853053,0.749,7,5848,10,0,
+A321AGEY23DDEH:36TFCYNS45IPB0KDBK8ZIBJ2YZNHXZ,1459782432762,English,5,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.35223162906337735,0.511,2,7966,10,0,
+A321AGEY23DDEH:36TFCYNS45IPB0KDBK8ZIBJ2YZNHXZ,1459782439689,English,6,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.4575274244287104,0.478,2,6925,10,0,
+A2FM87EO99KRQ7:3TESA3PJ32I092MKOAM3ZZB08H1MMS,1459780378422,English,1,tall,US male,P,tall,individual,extremely short,extremely tall,0.46073089779454435,0.721,7,14837,8,0,no
+A2FM87EO99KRQ7:3TESA3PJ32I092MKOAM3ZZB08H1MMS,1459780390829,English,2,expensive,laptop,P and not-P,expensive and not expensive,individual,almost nothing,an enormous amount,0.1965257918292851,0.504,1,12404,8,0,no
+A2FM87EO99KRQ7:3TESA3PJ32I092MKOAM3ZZB08H1MMS,1459780398583,English,3,fast,car,not-Q,not slow,stage,extremely slow,extremely fast,0.14749776154045446,0.767,5,7751,8,0,no
+A2FM87EO99KRQ7:3TESA3PJ32I092MKOAM3ZZB08H1MMS,1459780406439,English,4,full,band,not-P ,not full,stage,no one,sold out,0.3910057990732896,0.229,7,7854,8,0,no
+A2FM87EO99KRQ7:3TESA3PJ32I092MKOAM3ZZB08H1MMS,1459780413647,English,5,hot,bath,Q,cold,stage,extremely cold,extremely hot,0.14564221721566528,0.1,7,7206,8,0,no
+A2FM87EO99KRQ7:3TESA3PJ32I092MKOAM3ZZB08H1MMS,1459780420606,English,6,long,movie,neither P nor Q,neither long nor short,individual,extremely short,extremely long,0.6410365534813405,0.494,5,6957,8,0,no
+AHU818TAV0YTL:3U4J9857OFJL58B0TFU5213G1T47BF,1459781419984,english,1,fast,car,neither P nor Q,neither fast nor slow,stage,extremely slow,extremely fast,0.03097880672556963,0.433,4,28956,8,2,
+AHU818TAV0YTL:3U4J9857OFJL58B0TFU5213G1T47BF,1459781440530,english,2,hot,bath,P and not-P,hot and not hot,stage,extremely cold,extremely hot,0.3709533667083922,0.501,5,20546,8,2,
+AHU818TAV0YTL:3U4J9857OFJL58B0TFU5213G1T47BF,1459781464813,english,3,expensive,laptop,not-Q,not cheap,individual,almost nothing,an enormous amount,0.5259267208308318,0.533,5,24283,8,2,
+AHU818TAV0YTL:3U4J9857OFJL58B0TFU5213G1T47BF,1459781484987,english,4,tall,US male,Q and not-Q,short and not short,individual,extremely short,extremely tall,0.7936661823662445,0.765,5,20164,8,2,
+AHU818TAV0YTL:3U4J9857OFJL58B0TFU5213G1T47BF,1459781511927,english,5,full,band,not-P ,not full,stage,no one,sold out,0.08540986818743557,0.097,5,26930,8,2,
+AHU818TAV0YTL:3U4J9857OFJL58B0TFU5213G1T47BF,1459781531600,english,6,long,movie,P,long,individual,extremely short,extremely long,0.8036936957254153,0.604,5,19663,8,2,
+A1R5W4RQZTROD8:3K772S5NP9JG50TWGFI7UMYVITCHEQ,1459782213773,English,1,tall,US male,not-Q,not short,individual,extremely short,extremely tall,0.8563952514893358,0.528,3,12809,8,0,
+A1R5W4RQZTROD8:3K772S5NP9JG50TWGFI7UMYVITCHEQ,1459782220572,English,2,long,movie,Q,short,individual,extremely short,extremely long,0.1075324354286935,0.165,6,6798,8,0,
+A1R5W4RQZTROD8:3K772S5NP9JG50TWGFI7UMYVITCHEQ,1459782226014,English,3,hot,bath,neither P nor not-P,neither hot nor not hot,stage,extremely cold,extremely hot,0.1862412239838085,0.489,4,5440,8,0,
+A1R5W4RQZTROD8:3K772S5NP9JG50TWGFI7UMYVITCHEQ,1459782236304,English,4,full,band,not-P ,not full,stage,no one,sold out,0.744827049725735,0.491,3,10289,8,0,
+A1R5W4RQZTROD8:3K772S5NP9JG50TWGFI7UMYVITCHEQ,1459782247154,English,5,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.4278505430008359,0.512,2,10848,8,0,
+A1R5W4RQZTROD8:3K772S5NP9JG50TWGFI7UMYVITCHEQ,1459782257548,English,6,fast,car,neither P nor Q,neither fast nor slow,stage,extremely slow,extremely fast,0.8915243957429639,0.425,2,10392,8,0,
+A2K1ESUAWL5M9:36PW28KO4041VDLIA98FD0BR5YMAE8,1459780501018,English,1,long,movie,not-P ,not long,individual,extremely short,extremely long,0.5571439632073096,0.6,6,9152,5,0,
+A2K1ESUAWL5M9:36PW28KO4041VDLIA98FD0BR5YMAE8,1459780521107,English,2,full,band,P,full,stage,no one,sold out,0.41137208539216275,1.0,7,20087,5,0,
+A2K1ESUAWL5M9:36PW28KO4041VDLIA98FD0BR5YMAE8,1459780533617,English,3,expensive,laptop,P and not-P,expensive and not expensive,individual,almost nothing,an enormous amount,0.2902895149338096,0.258,1,12506,5,0,
+A2K1ESUAWL5M9:36PW28KO4041VDLIA98FD0BR5YMAE8,1459780542545,English,4,hot,bath,neither Q nor not-Q,neither cold nor not cold,stage,extremely cold,extremely hot,0.2086456095023006,0.501,5,8927,5,0,
+A2K1ESUAWL5M9:36PW28KO4041VDLIA98FD0BR5YMAE8,1459780553289,English,5,tall,US male,neither P nor Q,neither tall nor short,individual,extremely short,extremely tall,0.9376703136798366,0.495,6,10743,5,0,
+A2K1ESUAWL5M9:36PW28KO4041VDLIA98FD0BR5YMAE8,1459780564507,English,6,fast,car,neither P nor not-P,neither fast nor not fast,stage,extremely slow,extremely fast,0.4799981788400942,0.473,2,11217,5,0,
+AVPHXIHCQODIP:3ZAZR5XV02QNZN9CQAIJ452XT7HCZJ,1459781506560,english,1,expensive,laptop,neither P nor not-P,neither expensive nor not expensive,individual,almost nothing,an enormous amount,0.13056630205789865,0.513,3,18157,7,1,no
+AVPHXIHCQODIP:3ZAZR5XV02QNZN9CQAIJ452XT7HCZJ,1459781516771,english,2,long,movie,neither P nor Q,neither long nor short,individual,extremely short,extremely long,0.5675409774099478,0.514,6,10211,7,1,no
+AVPHXIHCQODIP:3ZAZR5XV02QNZN9CQAIJ452XT7HCZJ,1459781524563,english,3,hot,bath,neither Q nor not-Q,neither cold nor not cold,stage,extremely cold,extremely hot,0.7650076346999954,0.485,3,7792,7,1,no
+AVPHXIHCQODIP:3ZAZR5XV02QNZN9CQAIJ452XT7HCZJ,1459781570694,english,4,tall,US male,not-P ,not tall,individual,extremely short,extremely tall,0.3620369801899359,0.21,7,46131,7,1,no
+AVPHXIHCQODIP:3ZAZR5XV02QNZN9CQAIJ452XT7HCZJ,1459781579728,english,5,full,band,P,full,stage,no one,sold out,0.9385476807765372,1.0,7,9034,7,1,no
+AVPHXIHCQODIP:3ZAZR5XV02QNZN9CQAIJ452XT7HCZJ,1459781591551,english,6,fast,car,Q and not-Q,slow and not slow,stage,extremely slow,extremely fast,0.8708000589707374,0.509,1,11823,7,1,no
+A3D3NEQ158WUB0:3GDTJDAPVVJLODKGU9CKUHA5OCCM84,1459781348724,English,1,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.2948719083843059,0.512,3,19043,10,0,None
+A3D3NEQ158WUB0:3GDTJDAPVVJLODKGU9CKUHA5OCCM84,1459781359111,English,2,fast,car,P and not-P,fast and not fast,stage,extremely slow,extremely fast,0.5373598024875983,0.529,2,10387,10,0,None
+A3D3NEQ158WUB0:3GDTJDAPVVJLODKGU9CKUHA5OCCM84,1459781375429,English,3,full,band,neither P nor Q,neither full nor empty,stage,no one,sold out,0.1080352747769302,0.663,6,16318,10,0,None
+A3D3NEQ158WUB0:3GDTJDAPVVJLODKGU9CKUHA5OCCM84,1459781380933,English,4,tall,US male,Q and not-Q,short and not short,individual,extremely short,extremely tall,0.3235807891683231,0.543,1,5504,10,0,None
+A3D3NEQ158WUB0:3GDTJDAPVVJLODKGU9CKUHA5OCCM84,1459781391862,English,5,hot,bath,not-Q,not cold,stage,extremely cold,extremely hot,0.5374510882264532,0.842,7,10927,10,0,None
+A3D3NEQ158WUB0:3GDTJDAPVVJLODKGU9CKUHA5OCCM84,1459781398917,English,6,expensive,laptop,P,expensive,individual,almost nothing,an enormous amount,0.8551110714012142,0.903,7,7055,10,0,None
+A3JE938K7DZN83:3L4PIM1GQUOR0ZOQCL6VFTSHNEFYRJ,1459781334452,English,1,expensive,laptop,Q,cheap,individual,almost nothing,an enormous amount,0.5696684973878181,0.289,4,9141,5,1,
+A3JE938K7DZN83:3L4PIM1GQUOR0ZOQCL6VFTSHNEFYRJ,1459781343397,English,2,full,band,not-Q,not empty,stage,no one,sold out,0.6523975394493546,0.529,4,8944,5,1,
+A3JE938K7DZN83:3L4PIM1GQUOR0ZOQCL6VFTSHNEFYRJ,1459781351834,English,3,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.7984008820477861,0.508,2,8436,5,1,
+A3JE938K7DZN83:3L4PIM1GQUOR0ZOQCL6VFTSHNEFYRJ,1459781360334,English,4,fast,car,not-P ,not fast,stage,extremely slow,extremely fast,0.3626122272314978,0.324,3,8499,5,1,
+A3JE938K7DZN83:3L4PIM1GQUOR0ZOQCL6VFTSHNEFYRJ,1459781371075,English,5,hot,bath,neither P nor not-P,neither hot nor not hot,stage,extremely cold,extremely hot,0.7326987143668615,0.462,2,10740,5,1,
+A3JE938K7DZN83:3L4PIM1GQUOR0ZOQCL6VFTSHNEFYRJ,1459781378285,English,6,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.49034578096815085,0.392,2,7209,5,1,
+A3N8JP3QR3VPE8:3DQQ64TANHT2ZHDBKSKIP17MBORPWJ,1459781719273,English,1,tall,US male,not-Q,not short,individual,extremely short,extremely tall,0.8765416968612725,0.287,5,12095,7,1,
+A3N8JP3QR3VPE8:3DQQ64TANHT2ZHDBKSKIP17MBORPWJ,1459781730510,English,2,expensive,laptop,Q and not-Q,cheap and not cheap,individual,almost nothing,an enormous amount,0.7918206272408566,0.501,6,11236,7,1,
+A3N8JP3QR3VPE8:3DQQ64TANHT2ZHDBKSKIP17MBORPWJ,1459781790044,English,3,fast,car,neither P nor Q,neither fast nor slow,stage,extremely slow,extremely fast,0.5904887339445464,0.663,6,59532,7,1,
+A3N8JP3QR3VPE8:3DQQ64TANHT2ZHDBKSKIP17MBORPWJ,1459781810079,English,4,full,band,neither P nor not-P,neither full nor not full,stage,no one,sold out,0.146983075783639,0.412,3,20034,7,1,
+A3N8JP3QR3VPE8:3DQQ64TANHT2ZHDBKSKIP17MBORPWJ,1459781816002,English,5,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.05560981803203191,0.577,6,5922,7,1,
+A3N8JP3QR3VPE8:3DQQ64TANHT2ZHDBKSKIP17MBORPWJ,1459781822517,English,6,hot,bath,P,hot,stage,extremely cold,extremely hot,0.5074352750988085,0.674,5,6514,7,1,
+debug5B1ZMX:debugAJ5FRP,1459779770894,English,1,fast,car,P and not-P,fast and not fast,stage,extremely slow,extremely fast,0.9567437490914017,0.399,4,4742,8,3,Thanks!
+debug5B1ZMX:debugAJ5FRP,1459779773031,English,2,full,band,Q,empty,stage,no one,sold out,0.9744382821954787,0.514,5,2137,8,3,Thanks!
+debug5B1ZMX:debugAJ5FRP,1459779776496,English,3,long,movie,P,long,individual,extremely short,extremely long,0.5777983430307359,0.0,7,3464,8,3,Thanks!
+debug5B1ZMX:debugAJ5FRP,1459779779590,English,4,tall,US male,not-Q,not short,individual,extremely short,extremely tall,0.9605375332757831,1.0,1,3093,8,3,Thanks!
+debug5B1ZMX:debugAJ5FRP,1459779783314,English,5,hot,bath,neither P nor Q,neither hot nor cold,stage,extremely cold,extremely hot,0.1166528060566634,0.0,7,3723,8,3,Thanks!
+debug5B1ZMX:debugAJ5FRP,1459779787746,English,6,expensive,laptop,Q and not-Q,cheap and not cheap,individual,almost nothing,an enormous amount,0.403809703188017,1.0,1,4432,8,3,Thanks!
+A3L60SOWLYEDN2:3IKZ72A5B5O0LAF3EOXQHOGRG60NFN,1459780648299,english,1,expensive,laptop,Q,cheap,individual,almost nothing,an enormous amount,0.7082220127003385,0.569,4,14772,7,2,
+A3L60SOWLYEDN2:3IKZ72A5B5O0LAF3EOXQHOGRG60NFN,1459780673460,english,2,full,band,neither P nor not-P,neither full nor not full,stage,no one,sold out,0.3389139024885446,0.773,1,25160,7,2,
+A3L60SOWLYEDN2:3IKZ72A5B5O0LAF3EOXQHOGRG60NFN,1459780679404,english,3,fast,car,neither P nor Q,neither fast nor slow,stage,extremely slow,extremely fast,0.9636615580005639,0.492,4,5944,7,2,
+A3L60SOWLYEDN2:3IKZ72A5B5O0LAF3EOXQHOGRG60NFN,1459780685751,english,4,tall,US male,not-P ,not tall,individual,extremely short,extremely tall,0.7370006374026654,0.373,5,6346,7,2,
+A3L60SOWLYEDN2:3IKZ72A5B5O0LAF3EOXQHOGRG60NFN,1459780699769,english,5,hot,bath,neither Q nor not-Q,neither cold nor not cold,stage,extremely cold,extremely hot,0.7309791011243751,0.454,1,14017,7,2,
+A3L60SOWLYEDN2:3IKZ72A5B5O0LAF3EOXQHOGRG60NFN,1459780706141,english,6,long,movie,Q and not-Q,short and not short,individual,extremely short,extremely long,0.5755672203464373,0.489,3,6371,7,2,
+A36KDWI1CGJFFA:3NAPMVF0ZXNRHVB4AM1U180C7NQ277,1459782201257,English,1,tall,US male,neither P nor not-P,neither tall nor not tall,individual,extremely short,extremely tall,0.382459320763447,0.505,1,27497,8,1,No problems.
+A36KDWI1CGJFFA:3NAPMVF0ZXNRHVB4AM1U180C7NQ277,1459782219479,English,2,expensive,laptop,neither P nor Q,neither expensive nor cheap,individual,almost nothing,an enormous amount,0.6456788788045379,0.476,6,18219,8,1,No problems.
+A36KDWI1CGJFFA:3NAPMVF0ZXNRHVB4AM1U180C7NQ277,1459782231446,English,3,long,movie,not-Q,not short,individual,extremely short,extremely long,0.43412502267366737,0.507,2,11964,8,1,No problems.
+A36KDWI1CGJFFA:3NAPMVF0ZXNRHVB4AM1U180C7NQ277,1459782242380,English,4,fast,car,P and not-P,fast and not fast,stage,extremely slow,extremely fast,0.763341792024668,0.504,1,10932,8,1,No problems.
+A36KDWI1CGJFFA:3NAPMVF0ZXNRHVB4AM1U180C7NQ277,1459782258141,English,5,full,band,Q,empty,stage,no one,sold out,0.959168591268622,0.021,6,15760,8,1,No problems.
+A36KDWI1CGJFFA:3NAPMVF0ZXNRHVB4AM1U180C7NQ277,1459782270333,English,6,hot,bath,not-P ,not hot,stage,extremely cold,extremely hot,0.13915844447941295,0.618,6,12190,8,1,No problems.
+A85ATJSDTIARY:3RJSC4XJ1125YHU776IJK0T1JJB50B,1459780674267,English,1,fast,car,P,fast,stage,extremely slow,extremely fast,0.2181214248837391,0.794,6,10105,8,3,
+A85ATJSDTIARY:3RJSC4XJ1125YHU776IJK0T1JJB50B,1459780693836,English,2,full,band,not-P ,not full,stage,no one,sold out,0.41283137149054516,0.282,7,19567,8,3,
+A85ATJSDTIARY:3RJSC4XJ1125YHU776IJK0T1JJB50B,1459780701985,English,3,long,movie,neither P nor not-P,neither long nor not long,individual,extremely short,extremely long,0.29354361420820285,0.519,4,8148,8,3,
+A85ATJSDTIARY:3RJSC4XJ1125YHU776IJK0T1JJB50B,1459780712765,English,4,expensive,laptop,Q,cheap,individual,almost nothing,an enormous amount,0.3467942155786472,0.262,7,10779,8,3,
+A85ATJSDTIARY:3RJSC4XJ1125YHU776IJK0T1JJB50B,1459780725066,English,5,hot,bath,neither Q nor not-Q,neither cold nor not cold,stage,extremely cold,extremely hot,0.9971697100957075,0.561,4,12298,8,3,
+A85ATJSDTIARY:3RJSC4XJ1125YHU776IJK0T1JJB50B,1459780733744,English,6,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.8902073503526928,0.504,3,8677,8,3,
+AFZ7Z5FOWM9VN:39JEC7537V96Q342PDTGJZP15WBCVJ,1459781347732,english,1,long,movie,Q and not-Q,short and not short,individual,extremely short,extremely long,0.9176720917350126,0.456,2,26530,8,2,
+AFZ7Z5FOWM9VN:39JEC7537V96Q342PDTGJZP15WBCVJ,1459781368202,english,2,tall,US male,not-Q,not short,individual,extremely short,extremely tall,0.04932226694952557,0.664,5,20463,8,2,
+AFZ7Z5FOWM9VN:39JEC7537V96Q342PDTGJZP15WBCVJ,1459781393973,english,3,fast,car,neither Q nor not-Q,neither slow nor not slow,stage,extremely slow,extremely fast,0.7991135178681428,0.546,4,25765,8,2,
+AFZ7Z5FOWM9VN:39JEC7537V96Q342PDTGJZP15WBCVJ,1459781405872,english,4,hot,bath,P,hot,stage,extremely cold,extremely hot,0.701675585419818,0.688,7,11895,8,2,
+AFZ7Z5FOWM9VN:39JEC7537V96Q342PDTGJZP15WBCVJ,1459781421501,english,5,expensive,laptop,neither P nor Q,neither expensive nor cheap,individual,almost nothing,an enormous amount,0.938693010285419,0.61,6,15622,8,2,
+AFZ7Z5FOWM9VN:39JEC7537V96Q342PDTGJZP15WBCVJ,1459781444421,english,6,full,band,not-P ,not full,stage,no one,sold out,0.6769753904420988,0.577,6,22916,8,2,
+A1640H4RXH8NZE:3URFVVM166QJLHQCC13JYBO307MUZ9,1459780953039,English,1,full,band,neither P nor not-P,neither full nor not full,stage,no one,sold out,0.08328231954266019,0.552,2,16403,7,1,
+A1640H4RXH8NZE:3URFVVM166QJLHQCC13JYBO307MUZ9,1459780961565,English,2,hot,bath,neither P nor Q,neither hot nor cold,stage,extremely cold,extremely hot,0.6904767009266717,0.493,6,8520,7,1,
+A1640H4RXH8NZE:3URFVVM166QJLHQCC13JYBO307MUZ9,1459780969268,English,3,expensive,laptop,not-P ,not expensive,individual,almost nothing,an enormous amount,0.3509356040941116,0.311,6,7699,7,1,
+A1640H4RXH8NZE:3URFVVM166QJLHQCC13JYBO307MUZ9,1459780988074,English,4,fast,car,Q,slow,stage,extremely slow,extremely fast,0.026552939083053895,0.247,7,18802,7,1,
+A1640H4RXH8NZE:3URFVVM166QJLHQCC13JYBO307MUZ9,1459780995535,English,5,long,movie,P,long,individual,extremely short,extremely long,0.3812326050742396,0.794,7,7459,7,1,
+A1640H4RXH8NZE:3URFVVM166QJLHQCC13JYBO307MUZ9,1459781005344,English,6,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.13432865448358133,0.57,2,9804,7,1,
+A1GABEPSX2V15F:3MH9DQ757XKJU0V7M9FUD48XPHSUGK,1459782332262,English,1,fast,car,not-Q,not slow,stage,extremely slow,extremely fast,0.578241101124116,0.48,3,2819,8,1,
+A1GABEPSX2V15F:3MH9DQ757XKJU0V7M9FUD48XPHSUGK,1459782334581,English,2,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.13964566512986898,0.521,5,2303,8,1,
+A1GABEPSX2V15F:3MH9DQ757XKJU0V7M9FUD48XPHSUGK,1459782339715,English,3,expensive,laptop,neither P nor not-P,neither expensive nor not expensive,individual,almost nothing,an enormous amount,0.44839105396660606,0.326,3,5134,8,1,
+A1GABEPSX2V15F:3MH9DQ757XKJU0V7M9FUD48XPHSUGK,1459782342531,English,4,full,band,Q and not-Q,empty and not empty,stage,no one,sold out,0.7657825726206005,0.666,6,2816,8,1,
+A1GABEPSX2V15F:3MH9DQ757XKJU0V7M9FUD48XPHSUGK,1459782345446,English,5,long,movie,P,long,individual,extremely short,extremely long,0.09255434276883712,0.554,4,2915,8,1,
+A1GABEPSX2V15F:3MH9DQ757XKJU0V7M9FUD48XPHSUGK,1459782348116,English,6,hot,bath,neither Q nor not-Q,neither cold nor not cold,stage,extremely cold,extremely hot,0.37382997349651137,0.333,6,2654,8,1,
+AP9QPMZF13N0I:3IAS3U3I0GOEJ7EUN3DA6AM8QDH2BT,1459780363313,English,1,fast,car,neither P nor not-P,neither fast nor not fast,stage,extremely slow,extremely fast,0.7717333344786441,0.487,1,13021,9,1,"Interesting questions, enjoyed the survey."
+AP9QPMZF13N0I:3IAS3U3I0GOEJ7EUN3DA6AM8QDH2BT,1459780372728,English,2,expensive,laptop,P and not-P,expensive and not expensive,individual,almost nothing,an enormous amount,0.6618209759561677,0.498,1,9414,9,1,"Interesting questions, enjoyed the survey."
+AP9QPMZF13N0I:3IAS3U3I0GOEJ7EUN3DA6AM8QDH2BT,1459780387936,English,3,full,band,P,full,stage,no one,sold out,0.0831321833590355,1.0,7,15208,9,1,"Interesting questions, enjoyed the survey."
+AP9QPMZF13N0I:3IAS3U3I0GOEJ7EUN3DA6AM8QDH2BT,1459780397696,English,4,tall,US male,not-P ,not tall,individual,extremely short,extremely tall,0.19715297266802945,0.223,6,9760,9,1,"Interesting questions, enjoyed the survey."
+AP9QPMZF13N0I:3IAS3U3I0GOEJ7EUN3DA6AM8QDH2BT,1459780403751,English,5,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.40318276908237793,0.516,1,6055,9,1,"Interesting questions, enjoyed the survey."
+AP9QPMZF13N0I:3IAS3U3I0GOEJ7EUN3DA6AM8QDH2BT,1459780411560,English,6,hot,bath,Q,cold,stage,extremely cold,extremely hot,0.20358741987929374,0.228,6,7808,9,1,"Interesting questions, enjoyed the survey."
+A1B5O1E2T429ET:3IQ1VMJRYUSK0HU12YSTLMAGE16A9Y,1459782321242,English,1,hot,bath,neither P nor Q,neither hot nor cold,stage,extremely cold,extremely hot,0.832069281077271,0.492,7,9376,9,0,
+A1B5O1E2T429ET:3IQ1VMJRYUSK0HU12YSTLMAGE16A9Y,1459782337606,English,2,expensive,laptop,Q and not-Q,cheap and not cheap,individual,almost nothing,an enormous amount,0.34118212589295593,0.372,5,16363,9,0,
+A1B5O1E2T429ET:3IQ1VMJRYUSK0HU12YSTLMAGE16A9Y,1459782347575,English,3,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.41841949488135755,0.727,1,9967,9,0,
+A1B5O1E2T429ET:3IQ1VMJRYUSK0HU12YSTLMAGE16A9Y,1459782358341,English,4,fast,car,not-Q,not slow,stage,extremely slow,extremely fast,0.9477841761118633,0.785,7,10765,9,0,
+A1B5O1E2T429ET:3IQ1VMJRYUSK0HU12YSTLMAGE16A9Y,1459782369201,English,5,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.3932966567296401,0.494,4,10857,9,0,
+A1B5O1E2T429ET:3IQ1VMJRYUSK0HU12YSTLMAGE16A9Y,1459782387680,English,6,full,band,Q,empty,stage,no one,sold out,0.2421066902421929,0.0,7,18477,9,0,
+A2E9NUZZ4S2VJ9:3EQHHY4HQT029L5SL87M5SGHQ005GE,1459780565729,english,1,expensive,laptop,Q and not-Q,cheap and not cheap,individual,almost nothing,an enormous amount,0.5480880659443759,0.5,1,42544,5,5,
+A2E9NUZZ4S2VJ9:3EQHHY4HQT029L5SL87M5SGHQ005GE,1459780574193,english,2,long,movie,P,long,individual,extremely short,extremely long,0.4321937031505607,0.829,7,8462,5,5,
+A2E9NUZZ4S2VJ9:3EQHHY4HQT029L5SL87M5SGHQ005GE,1459780585406,english,3,full,band,Q,empty,stage,no one,sold out,0.8436932409231919,0.124,6,11213,5,5,
+A2E9NUZZ4S2VJ9:3EQHHY4HQT029L5SL87M5SGHQ005GE,1459780604066,english,4,hot,bath,P and not-P,hot and not hot,stage,extremely cold,extremely hot,0.09454795340487387,0.514,1,18659,5,5,
+A2E9NUZZ4S2VJ9:3EQHHY4HQT029L5SL87M5SGHQ005GE,1459780610985,english,5,fast,car,neither Q nor not-Q,neither slow nor not slow,stage,extremely slow,extremely fast,0.6075838529551176,0.522,1,6918,5,5,
+A2E9NUZZ4S2VJ9:3EQHHY4HQT029L5SL87M5SGHQ005GE,1459780615494,english,6,tall,US male,neither P nor Q,neither tall nor short,individual,extremely short,extremely tall,0.0684258292750275,0.526,1,4508,5,5,
+A20L6EMMVJ8Y69:3NAPMVF0ZXNRHVB4AM1U180C7NR72D,1459781091916,English,1,full,band,neither P nor not-P,neither full nor not full,stage,no one,sold out,0.4431514728929723,0.508,1,20967,10,0,None
+A20L6EMMVJ8Y69:3NAPMVF0ZXNRHVB4AM1U180C7NR72D,1459781109530,English,2,tall,US male,neither P nor Q,neither tall nor short,individual,extremely short,extremely tall,0.18379651066306923,0.518,5,17611,10,0,None
+A20L6EMMVJ8Y69:3NAPMVF0ZXNRHVB4AM1U180C7NR72D,1459781119818,English,3,long,movie,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely long,0.6384038291403534,0.507,2,10282,10,0,None
+A20L6EMMVJ8Y69:3NAPMVF0ZXNRHVB4AM1U180C7NR72D,1459781131606,English,4,hot,bath,P and not-P,hot and not hot,stage,extremely cold,extremely hot,0.08251214763566683,0.864,2,11786,10,0,None
+A20L6EMMVJ8Y69:3NAPMVF0ZXNRHVB4AM1U180C7NR72D,1459781143101,English,5,expensive,laptop,P,expensive,individual,almost nothing,an enormous amount,0.9140464267251334,0.947,7,11491,10,0,None
+A20L6EMMVJ8Y69:3NAPMVF0ZXNRHVB4AM1U180C7NR72D,1459781161250,English,6,fast,car,not-Q,not slow,stage,extremely slow,extremely fast,0.39184030692201355,0.705,6,18146,10,0,None
+A39ROW50DWRRKT:3H7XDTSHKDZWM4KCH9UVVSTUAX4WGM,1459781040461,english,1,hot,bath,Q and not-Q,cold and not cold,stage,extremely cold,extremely hot,0.8740861057414167,0.186,2,12756,7,3,
+A39ROW50DWRRKT:3H7XDTSHKDZWM4KCH9UVVSTUAX4WGM,1459781048331,english,2,expensive,laptop,P,expensive,individual,almost nothing,an enormous amount,0.7271491288095904,0.744,7,7865,7,3,
+A39ROW50DWRRKT:3H7XDTSHKDZWM4KCH9UVVSTUAX4WGM,1459781058014,english,3,fast,car,neither P nor not-P,neither fast nor not fast,stage,extremely slow,extremely fast,0.5724997899989894,0.25,1,9679,7,3,
+A39ROW50DWRRKT:3H7XDTSHKDZWM4KCH9UVVSTUAX4WGM,1459781063907,english,4,full,band,Q,empty,stage,no one,sold out,0.8757276457139134,0.0,7,5892,7,3,
+A39ROW50DWRRKT:3H7XDTSHKDZWM4KCH9UVVSTUAX4WGM,1459781070125,english,5,long,movie,not-Q,not short,individual,extremely short,extremely long,0.9993118781219208,0.73,5,6216,7,3,
+A39ROW50DWRRKT:3H7XDTSHKDZWM4KCH9UVVSTUAX4WGM,1459781075913,english,6,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.2971347522376908,0.52,1,5784,7,3,
+AGAG64Q9KUQEO:3DY4FPOOA2WAW5TL7AJB8UON5XDVR7,1459780829343,English,1,expensive,laptop,not-Q,not cheap,individual,almost nothing,an enormous amount,0.1523202290682073,0.307,4,4450,7,2,
+AGAG64Q9KUQEO:3DY4FPOOA2WAW5TL7AJB8UON5XDVR7,1459780834516,English,2,long,movie,neither P nor not-P,neither long nor not long,individual,extremely short,extremely long,0.6911497289584949,0.579,5,5171,7,2,
+AGAG64Q9KUQEO:3DY4FPOOA2WAW5TL7AJB8UON5XDVR7,1459780837344,English,3,fast,car,Q,slow,stage,extremely slow,extremely fast,0.20232595285343224,0.493,4,2827,7,2,
+AGAG64Q9KUQEO:3DY4FPOOA2WAW5TL7AJB8UON5XDVR7,1459780841248,English,4,tall,US male,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely tall,0.41320321113985825,0.495,4,3902,7,2,
+AGAG64Q9KUQEO:3DY4FPOOA2WAW5TL7AJB8UON5XDVR7,1459780844707,English,5,full,band,not-P ,not full,stage,no one,sold out,0.07599113682689262,0.507,5,3456,7,2,
+AGAG64Q9KUQEO:3DY4FPOOA2WAW5TL7AJB8UON5XDVR7,1459780849234,English,6,hot,bath,P,hot,stage,extremely cold,extremely hot,0.4437106338662573,0.505,4,4526,7,2,
+AZWNKDPOHO240:3WLEIWSYHPPOAKHGNVN6SLP6LQN2HA,1459781841220,english,1,expensive,laptop,Q,cheap,individual,almost nothing,an enormous amount,0.5953635818485472,0.322,7,11962,6,0,No.
+AZWNKDPOHO240:3WLEIWSYHPPOAKHGNVN6SLP6LQN2HA,1459781850235,english,2,long,movie,not-Q,not short,individual,extremely short,extremely long,0.3874967068061528,0.579,3,9013,6,0,No.
+AZWNKDPOHO240:3WLEIWSYHPPOAKHGNVN6SLP6LQN2HA,1459781858838,english,3,hot,bath,P and not-P,hot and not hot,stage,extremely cold,extremely hot,0.8962062921579927,0.521,2,8600,6,0,No.
+AZWNKDPOHO240:3WLEIWSYHPPOAKHGNVN6SLP6LQN2HA,1459781868347,english,4,tall,US male,not-P ,not tall,individual,extremely short,extremely tall,0.3261032730729778,0.416,4,9508,6,0,No.
+AZWNKDPOHO240:3WLEIWSYHPPOAKHGNVN6SLP6LQN2HA,1459781879714,english,5,full,band,Q and not-Q,empty and not empty,stage,no one,sold out,0.19084113869854313,0.492,1,11364,6,0,No.
+AZWNKDPOHO240:3WLEIWSYHPPOAKHGNVN6SLP6LQN2HA,1459781886798,english,6,fast,car,P,fast,stage,extremely slow,extremely fast,0.3837665937103898,0.668,7,7084,6,0,No.
+A1M1TSMJB12177:3MHW492WW1LJZPGT22NUMVUDZADMV9,1459780713405,English,1,expensive,laptop,not-P ,not expensive,individual,almost nothing,an enormous amount,0.5609113594982773,0.27,7,12546,5,0,"None, keep up the good work! :D"
+A1M1TSMJB12177:3MHW492WW1LJZPGT22NUMVUDZADMV9,1459780739261,English,2,tall,US male,neither P nor not-P,neither tall nor not tall,individual,extremely short,extremely tall,0.47313534864224494,0.484,5,25843,5,0,"None, keep up the good work! :D"
+A1M1TSMJB12177:3MHW492WW1LJZPGT22NUMVUDZADMV9,1459780747981,English,3,fast,car,Q,slow,stage,extremely slow,extremely fast,0.6475963543634862,0.228,6,8712,5,0,"None, keep up the good work! :D"
+A1M1TSMJB12177:3MHW492WW1LJZPGT22NUMVUDZADMV9,1459780759894,English,4,long,movie,Q and not-Q,short and not short,individual,extremely short,extremely long,0.4162178570404649,0.492,1,11904,5,0,"None, keep up the good work! :D"
+A1M1TSMJB12177:3MHW492WW1LJZPGT22NUMVUDZADMV9,1459780767230,English,5,full,band,P and not-P,full and not full,stage,no one,sold out,0.658788432367146,0.496,1,7327,5,0,"None, keep up the good work! :D"
+A1M1TSMJB12177:3MHW492WW1LJZPGT22NUMVUDZADMV9,1459780774999,English,6,hot,bath,not-Q,not cold,stage,extremely cold,extremely hot,0.0570534800644964,0.75,5,7759,5,0,"None, keep up the good work! :D"
+A2QKF81YI2ORRM:3EICBYG6454XZ8488OFXGBE7A93JC4,1459781038470,English,1,full,band,P,full,stage,no one,sold out,0.004624444441223119,1.0,4,16329,7,1,It was very interesting!  Thanks!
+A2QKF81YI2ORRM:3EICBYG6454XZ8488OFXGBE7A93JC4,1459781048027,English,2,tall,US male,not-P ,not tall,individual,extremely short,extremely tall,0.5858476591172959,0.335,6,9550,7,1,It was very interesting!  Thanks!
+A2QKF81YI2ORRM:3EICBYG6454XZ8488OFXGBE7A93JC4,1459781058865,English,3,fast,car,P and not-P,fast and not fast,stage,extremely slow,extremely fast,0.9322516933075871,0.465,1,10834,7,1,It was very interesting!  Thanks!
+A2QKF81YI2ORRM:3EICBYG6454XZ8488OFXGBE7A93JC4,1459781069942,English,4,long,movie,Q,short,individual,extremely short,extremely long,0.7381289954033958,0.326,6,11074,7,1,It was very interesting!  Thanks!
+A2QKF81YI2ORRM:3EICBYG6454XZ8488OFXGBE7A93JC4,1459781079722,English,5,expensive,laptop,Q and not-Q,cheap and not cheap,individual,almost nothing,an enormous amount,0.21982360671565582,0.382,1,9775,7,1,It was very interesting!  Thanks!
+A2QKF81YI2ORRM:3EICBYG6454XZ8488OFXGBE7A93JC4,1459781094516,English,6,hot,bath,not-Q,not cold,stage,extremely cold,extremely hot,0.6826971773718189,0.634,4,14789,7,1,It was very interesting!  Thanks!
+A9754EPKP763V:3DYGAII7PMGXFKHP8JLCXCP0NN9PQE,1459781692372,English,1,hot,bath,neither P nor not-P,neither hot nor not hot,stage,extremely cold,extremely hot,0.7709215089760116,0.504,5,15326,9,1,No.
+A9754EPKP763V:3DYGAII7PMGXFKHP8JLCXCP0NN9PQE,1459781700822,English,2,fast,car,P,fast,stage,extremely slow,extremely fast,0.6343370200809967,0.692,7,8440,9,1,No.
+A9754EPKP763V:3DYGAII7PMGXFKHP8JLCXCP0NN9PQE,1459781713773,English,3,tall,US male,neither Q nor not-Q,neither short nor not short,individual,extremely short,extremely tall,0.2784058418666985,0.493,1,12947,9,1,No.
+A9754EPKP763V:3DYGAII7PMGXFKHP8JLCXCP0NN9PQE,1459781728798,English,4,full,band,neither P nor Q,neither full nor empty,stage,no one,sold out,0.9973875658085936,0.505,6,15018,9,1,No.
+A9754EPKP763V:3DYGAII7PMGXFKHP8JLCXCP0NN9PQE,1459781741108,English,5,long,movie,not-P ,not long,individual,extremely short,extremely long,0.25831975341741165,0.336,7,12296,9,1,No.
+A9754EPKP763V:3DYGAII7PMGXFKHP8JLCXCP0NN9PQE,1459781753982,English,6,expensive,laptop,Q,cheap,individual,almost nothing,an enormous amount,0.45774392246251505,0.134,7,12867,9,1,No.
+A3N5OHAGVN61R9:3JAOYWH7VJC1W0L5ZPHJU0QR8D69LG,1459781151668,bla,1,hot,bath,not-P ,not hot,stage,extremely cold,extremely hot,0.42759053838271677,0.35,2,32281,5,5,1
+A3N5OHAGVN61R9:3JAOYWH7VJC1W0L5ZPHJU0QR8D69LG,1459781179929,bla,2,fast,car,neither P nor Q,neither fast nor slow,stage,extremely slow,extremely fast,0.10132396673823729,0.5,1,28257,5,5,1
+A3N5OHAGVN61R9:3JAOYWH7VJC1W0L5ZPHJU0QR8D69LG,1459781195833,bla,3,expensive,laptop,neither Q nor not-Q,neither cheap nor not cheap,individual,almost nothing,an enormous amount,0.9541102549898086,0.5,1,15898,5,5,1
+A3N5OHAGVN61R9:3JAOYWH7VJC1W0L5ZPHJU0QR8D69LG,1459781231081,bla,4,full,band,not-Q,not empty,stage,no one,sold out,0.7807046385801222,0.074,5,35245,5,5,1
+A3N5OHAGVN61R9:3JAOYWH7VJC1W0L5ZPHJU0QR8D69LG,1459781242985,bla,5,tall,US male,P and not-P,tall and not tall,individual,extremely short,extremely tall,0.2381648555851572,0.607,1,11900,5,5,1
+A3N5OHAGVN61R9:3JAOYWH7VJC1W0L5ZPHJU0QR8D69LG,1459781254976,bla,6,long,movie,P,long,individual,extremely short,extremely long,0.24545602570744007,1.0,7,11986,5,5,1
