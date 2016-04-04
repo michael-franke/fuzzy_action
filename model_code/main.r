@@ -9,7 +9,6 @@
 #### 4. run the game with RSA, RD or IQR
 #############################################
 
-setwd("~/Desktop/borderline-contradictions/model_code")
 library(dplyr)
 source('solution_concepts.r')
 source('SOM.R')
