@@ -15,6 +15,7 @@ require(reshape2)
 
 ```{r}
 d = read.csv('data.csv')
+d = droplevels(subset(d, d$id != "debug5B1ZMX:debugAJ5FRP"))
 nr_participants_initial = nlevels(factor(d$id))
 ```
 
@@ -167,7 +168,7 @@ Variance in interpretations against naturalness:
 ```{r}
 correlation_data = d %>% group_by(scenarioLabel, expressionLabel, predicateType) %>%
   summarize(mean_naturalness = mean(naturalness),
-            variance_interpretation = var(answerRescaled))
+            variance_interpretation = var(answer))
 
 correlation_plot = ggplot(correlation_data, aes(x = mean_naturalness, y = variance_interpretation)) +
   geom_point()
