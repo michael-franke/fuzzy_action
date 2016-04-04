@@ -9,6 +9,7 @@
 #### 4. run the game with RSA, RD or IQR
 #############################################
 
+setwd("~/Desktop/borderline-contradictions/model_code")
 library(dplyr)
 source('solution_concepts.r')
 source('SOM.R')
@@ -65,7 +66,7 @@ get_base_semantics = function(prior, lambda = 5, cost = 0, style = "OTM") {
 }
 
 get_compositional_semantics = function(base_semantics, style = "fuzzy_classic") {
-  known_styles = c("fuzzy_classic", "Dan's mythical magic mix")
+  known_styles = c("fuzzy_classic", "fuzzy_weird", "Dan's mythical magic mix")
   P = base_semantics$P
   Q = base_semantics$Q
   ns = length(P)
@@ -89,6 +90,46 @@ get_compositional_semantics = function(base_semantics, style = "fuzzy_classic") 
     semantics[7,] = sapply(1:ns, function(x) min(1-P[x], P[x]) ) # neither P nor not P
     semantics[8,] = sapply(1:ns, function(x) min(1-Q[x], Q[x]) ) # Q and not Q
     semantics[9,] = sapply(1:ns, function(x) min(1-P[x], P[x]) ) # P and not P
+  }
+  if (style == "fuzzy_weird") {
+    semantics[1,] = Q 
+      # Q
+    semantics[2,] = 1-P 
+      # not P
+    semantics[3,] = sapply(1:ns, function(x) min(1-P[x], 1-Q[x]) ) 
+      # not P and not Q
+    semantics[4,] = 1-Q
+      # not Q
+    semantics[5,] = P
+      # P
+    semantics[6,] = sapply(1:ns, function(x) min(1-Q[x], Q[x])/.5 ) 
+      # neither Q nor not Q
+    semantics[7,] = sapply(1:ns, function(x) min(1-P[x], P[x])/.5 ) 
+      # neither P nor not P
+    semantics[8,] = sapply(1:ns, function(x) min(1-Q[x], Q[x])/.5 ) 
+      # Q and not Q
+    semantics[9,] = sapply(1:ns, function(x) min(1-P[x], P[x])/.5 ) 
+      # P and not P
+  }
+  if (style == "Dan's mythical magic mix") {
+    semantics[1,] = Q 
+    # Q
+    semantics[2,] = 1-P 
+    # not P
+    semantics[3,] = sapply(1:ns, function(x) (1-P[x]) * (1-Q[x])) 
+    # not P and not Q
+    semantics[4,] = 1-Q
+    # not Q
+    semantics[5,] = P
+    # P
+    semantics[6,] = sapply(1:ns, function(x) Q[x] * (1-Q[x])) 
+    # neither Q nor not Q
+    semantics[7,] = sapply(1:ns, function(x) P[x] * (1-P[x]))  
+    # neither P nor not P
+    semantics[8,] = sapply(1:ns, function(x) Q[x] * (1-Q[x])) 
+    # Q and not Q
+    semantics[9,] = sapply(1:ns, function(x) P[x] * (1-P[x])) 
+    # P and not P
   }
   if (! style %in% known_styles) {
     warning(paste0("Unknown style for compositional semantics. Use one from: ", paste0(known_styles, collapse = ", ")))
