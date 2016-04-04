@@ -13,7 +13,8 @@
       <p>Some of the descriptions may sound more or less natural: please try to give your best guess anyway. After you have made a guess, we will also ask you to rate 
           how natural the description sounds to you.
         </p>
-
+<p>    Below we give some examples of how you might think about answering these questions. However, there are no right or wrong answers &mdash; the exact rating is up to you. </p>
+      <p>Note also that, in the main task, the sliders will be initialized to a random position. Please note that this position is randomly chosen and not meaningful. </p>
         <script type="text/javascript">
         //console.log(psiTurk.getInstructionIndicator())
         </script>
@@ -34,7 +35,7 @@
       <span style="color:grey">This description suggests that the party was not a whole lot of fun. So we might rate it like this:</span>
       
         <div style="width:80%", style="position:relative">
-          <input type="range" min="0" max="1" value="0.4" step="0.01" />
+          <input type="range" min="0" max="1" value="0.4" step="0.01" readonly/>
           <span id="label_left">not at all</span>
           <span id="label_right">enormously</span>
         </div>
@@ -56,19 +57,16 @@
         <span style="color:grey">The story suggests that she liked the flowers all right. So we might rate it like this:</span>
       
         <div style="width:80%", style="position:relative">
-          <input type="range" min="0" max="1" value="0.6" step="0.01" />
+          <input type="range" min="0" max="1" value="0.6" step="0.01" readonly />
           <span id="label_left">not at all</span>
           <span id="label_right">best thing ever</span>
         </div>
         
-
+<br>
+      
         <script type="text/javascript">
         //console.log(psiTurk.getInstructionIndicator())
         </script>
-
-        <br> <br>
-        
-        However, the exact rating is up to you &mdash; judge according to your own feeling, remembering that there are no right or wrong answers. 
         
     </div>
   
