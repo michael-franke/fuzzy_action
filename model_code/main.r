@@ -188,22 +188,21 @@ get_rank_order = function(solution) {
 ## create the game
 #############################################
 
-max_states = 11
+max_states = 101
 ns = max_states + 1
 states = seq(0,max_states, length.out = max_states+1)
 
-prior = get_prior(ns, style = "horns")
+prior = get_prior(ns, style = "normal")
 
 base_semantics = get_base_semantics(prior, lambda = 1, cost = 0.5, style = "OTM")
 
-semantics = get_compositional_semantics(base_semantics, style = "fuzzy_classic")
+semantics = get_compositional_semantics(base_semantics, style = "Dan's mythical magic mix")
 # restrict the semantics to exclude borderline contradictions
 semantics = semantics[1:7,]
 
 # utils = get_utils(ns, "Lewis")
 utils = get_utils(ns, "Nosofsky")
 # utils = get_utils(ns, "quadratic_loss_rescaled")
-
 
 fuzzy_action_game = create_game(
   states = paste("t_", 0:(ns-1), collapse = NULL, sep = ""),
@@ -219,9 +218,9 @@ fuzzy_action_game = create_game(
 #############################################
 
 # solution = apply_RD(fuzzy_action_game, iterations = 105)
-solution = apply_RSA(fuzzy_action_game, depth = 10, lambda = 5)
-# solution = apply_IBR(fuzzy_action_game, depth = 10)
-# solution = apply_IQR(fuzzy_action_game, depth = 10, lambda = 15)
+solution = apply_RSA(fuzzy_action_game, depth = 5, lambda = 5)
+solution = apply_IBR(fuzzy_action_game, depth = 10)
+solution = apply_IQR(fuzzy_action_game, depth = 10, lambda = 15)
 
 #############################################
 ## visualization
@@ -231,3 +230,6 @@ show(plot_sender(solution$sen))
 show(plot_receiver(solution$rec))
 show(sort(get_rank_order(solution)))
 
+fuzzy.classic.rank.order
+fuzzy.weird.rank.order 
+prob.indep.rank.order
