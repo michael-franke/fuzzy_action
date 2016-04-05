@@ -24,12 +24,13 @@ decum = function(v) {
   return(out)
 }
 
+maximum = 100
 grid.size = 101
-tall.mu = .55
-short.mu = .45
-both.sd = .1
+tall.mu = .55 * maximum
+short.mu = .45 * maximum
+both.sd = .1 * maximum
 
-grid = seq(from=0.01, to=.99, length.out=grid.size)
+grid = seq(from=0, to=maximum, length.out=grid.size)
 
 # normal prior:
 tall.theta = Normalize(sapply(grid, FUN=function(x) dnorm(x, tall.mu, both.sd)))
@@ -80,23 +81,24 @@ legend(x=.75, y=.7, c('Truthiness', 'Mult-sampling BC', 'Fuzzy-rescaled BC'), co
 
 # choice point: does the improbability of the multiple-sampling being true affect the speaker probabilities? or do we just let costs do the work of sharpening this utterance?
 degrees = grid
-degree.mu = .5
-degree.sd = .15
+degree.mu = .5 * maximum
+degree.sd = .15 * maximum
 degree.prior = Normalize(sapply(degrees, function(x) dnorm(x, degree.mu, degree.sd)))
 #degree.prior = Normalize(sapply(degrees, function(x) dbeta(x, .5, .5)))
-lambda = 5
-cost.param = 2/3
+lambda = 30
+cost.param = .01
 
-utterances = c('tall', 'short', 'nada', 'not tall', 'not short', 'tall and not tall', 'short and not short', 'neither tall nor short')
+#utterances = c('tall', 'short', 'nada', 'not tall', 'not short', 'tall and not tall', 'short and not short', 'neither tall nor short')
+utterances = c('tall', 'short', 'not tall', 'not short', 'tall and not tall', 'short and not short', 'neither tall nor short')
 cost = function(u) cost.param * switch(u, 
-                                       'tall' = 1,
-                                       'short' = 1,
-                                       'not tall' = 1,
-                                       'not short' = 1,
-                                       'tall and not tall' = 1,
-                                       'short and not short' = 1,
-                                       'neither tall nor short' = 1,
-                                       'nada' = 1
+                                       'tall' = 2,
+                                       'short' = 2,
+                                       'not tall' = 3,
+                                       'not short' = 3,
+                                       'tall and not tall' = 4,
+                                       'short and not short' = 4,
+                                       'neither tall nor short' = 4#,
+                                      # 'nada' = 0
 )
 vacuous = rep(1, grid.size)
 listener = function(semantic.theory) {
@@ -132,8 +134,8 @@ listener = function(semantic.theory) {
                    'tall' = tall.cumulative,
                    'short' = short.cumulative,
                    'not tall' = not.tall.cumulative,
-                   'not short' = not.short.cumulative,
-                   'nada' = vacuous
+                   'not short' = not.short.cumulative#,
+                  # 'nada' = vacuous
         )
       }
       return(sem[which(degrees==d)])
@@ -157,13 +159,15 @@ speaker.prefs = function(d, semantic.theory) {
                 )
   listener.based.prefs = listener.probs[which(degrees == d),]
     # pick out the row where the relevant listener probs are
+  utility.by.degree = sapply(degrees, function(x) -((x - d)^2))
   utt.pref = function(u) {
-    exp(lambda * (listener.based.prefs[which(utterances==u)] - cost(u)))
+    interp.probs = listener.probs[,which(utterances==u)]
+    expected.utility = sum(interp.probs * utility.by.degree) - cost(u)
+    return(exp(lambda * expected.utility))
   }
   utt.probs = Normalize(sapply(utterances, utt.pref))
   return(utt.probs)
 }
-
 
 # taking speaker prefs to be a model of intuitive 'appropriateness':
 theory.prefs = function(theory.name) {
@@ -183,16 +187,16 @@ plot.utt.prefs = function(theory.name) {
                  'fuzzy-rescaled' = fuzzy.rescaled.prefs,
                  'mult-sampling' = mult.sampling.prefs
                  )
-  plot(degrees, prefs[1,], col=cols[1], type='l', xlim=c(0,1), ylim=c(min(prefs[-3,]),max(prefs[-3,])), main=paste('Speaker prefs:', theory.name))
-  for (i in c(2,4:length(utterances))) {
+  plot(degrees, prefs[1,], col=cols[1], type='l', xlim=c(0,maximum), ylim=c(min(prefs),max(prefs)), main=paste('Speaker prefs:', theory.name))
+  for (i in 2:length(utterances)) {
     lines(degrees, prefs[i,], col=cols[i])
   }
-  legend('topright', utterances[-3], text.col=cols[-3], col=cols[-3], lty=1, cex=.4)
+  legend('topright', utterances, text.col=cols, col=colss, lty=1, cex=.4)
 }
 
-par(mfrow=c(1,1))
-plot.utt.prefs('fuzzy-classic')
-plot.utt.prefs('fuzzy-rescaled')
+par(mfrow=c(2,1))
+#plot.utt.prefs('fuzzy-classic')
+#plot.utt.prefs('fuzzy-rescaled')
 plot.utt.prefs('mult-sampling')
 
 plot.interp = function(theory.name) {
@@ -201,16 +205,16 @@ plot.interp = function(theory.name) {
                  'fuzzy-rescaled' = t(listener.fuzzy.rescaled),
                  'mult-sampling' = t(listener.mult.sampling)
   )
-  plot(degrees, prefs[1,], col=cols[1], type='l', xlim=c(0,1), ylim=c(min(prefs[-3,]), max(prefs[-3,])), main=paste('Interp:', theory.name))
-  for (i in c(2,4:length(utterances))) {
+  plot(degrees, prefs[1,], col=cols[1], type='l', xlim=c(0,maximum), ylim=c(min(prefs), max(prefs)), main=paste('Interp:', theory.name))
+  for (i in 2:length(utterances)) {
     lines(degrees, prefs[i,], col=cols[i])
   }
-  legend('topright', utterances[-3], text.col=cols[-3], col=cols[-3], lty=1, cex=.7)
+  legend('topright', utterances, text.col=cols, col=cols, lty=1, cex=.4)
 }
 
-par(mfrow=c(1,1))
-plot.interp('fuzzy-classic')
-plot.interp('fuzzy-rescaled')
+#par(mfrow=c(1,1))
+#plot.interp('fuzzy-classic')
+#plot.interp('fuzzy-rescaled')
 plot.interp('mult-sampling')
 
 # implementation of metalinguistic negation for not P and not not-P?

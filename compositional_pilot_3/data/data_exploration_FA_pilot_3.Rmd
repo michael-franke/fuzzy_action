@@ -16,6 +16,7 @@ require(reshape2)
 ```{r}
 d = read.csv('data.csv')
 d = droplevels(subset(d, d$id != "debug5B1ZMX:debugAJ5FRP"))
+d = subset(d, RT >= 3500)
 nr_participants_initial = nlevels(factor(d$id))
 ```
 

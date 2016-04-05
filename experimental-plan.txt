@@ -1,0 +1,43 @@
+3 experiments, each with 5 scenarios, in two parts.
+	Scenarios:
+	    US male: tall vs short
+	    bath: hot vs cold
+	    movie: long vs short
+	    laptop: expensive vs cheap
+	    car: fast vs slow
+	Descriptions:
+	    “Q”,
+	    “not-P”,
+	    “neither Q nor not-P”,
+	    “neither P nor Q”,
+	    “neither P nor not-Q”,
+	    “not-Q”,
+	    “P”
+	    “P and not-P”
+    	“Q and not-Q”
+
+Part (a): present scenario, do prior elicitation using a modified Manski method.
+	-Use proportions instead of numerical probability estimates.
+	-'Think of adult men in the United States. What proportion of them are less than 5 feet 6 inches tall?' etc.
+
+Part (b): get judgments for each description. 
+				(or just a subset?)
+			Task varies by experiment:
+
+	Experiment 1: give message and degree; ask for acceptability rating or TV judgment
+		Use prior elicitation to select degrees for by-subject analysis
+		Hypotheses: task indexes 
+				-truth-value (vagueness mavens)
+				-production prob. (Franke)
+
+	Experiment 2: give degree, ask to choose a description from the list.
+		Use prior elicitation to select degrees for by-subject analysis
+		Can use either forced-choice, or slider rating for each description.
+		Hypothesis: task indexes production prob.
+
+	Experiment 3: give message, ask to choose a degree using slider. 
+		Replication/refinement of our first pilot.
+		Use prior elicitation to choose min and max values for slider.
+		Hypothesis: task indexes interpretation prob.
+
+
