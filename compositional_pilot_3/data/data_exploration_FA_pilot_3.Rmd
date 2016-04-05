@@ -1,5 +1,5 @@
 ---
-title: "Fuzzy action: 2nd pilot "
+title: "Fuzzy action: 3rd pilot "
 output: html_document
 ---
 
@@ -16,7 +16,6 @@ require(reshape2)
 ```{r}
 d = read.csv('data.csv')
 d = droplevels(subset(d, d$id != "debug5B1ZMX:debugAJ5FRP"))
-d = subset(d, RT >= 3500)
 nr_participants_initial = nlevels(factor(d$id))
 ```
 
@@ -65,7 +64,7 @@ Here, "P" is either *tall* and "Q" is *short* for scenario "US male".
 
 ```{r}
 
-d = droplevels(filter(d, ! language %in% c("bulgarian", "Chinese", "Hindi") ))
+d = droplevels(filter(d, ! language %in% c("chinese", "Chinese", "english, vietnamese", "Spanish", "Telugu") ))
 nr_excluded_for_language = nr_participants_initial - nlevels(factor(d$id)) 
 
 d$workerID = unlist(sapply(1:nrow(d), function(i) strsplit(as.character(d$id[i]), ":")[[1]][1]))
@@ -73,7 +72,7 @@ d$assignmentID = unlist(sapply(1:nrow(d), function(i) strsplit(as.character(d$id
 
 ```
 
-We exclude `r nr_excluded_for_language` participants as not being self-reported native English speakers. We did not have any double takers, so we have a total of `r nr_participants_initial - nr_excluded_for_language` participants. This gives us an expectation of `r round((nr_participants_initial - nr_excluded_for_language) / 9,2)` answers per scenario-description pair.
+We exclude `r nr_excluded_for_language` participants as not being self-reported native English speakers. We have a total of `r nr_participants_initial - nr_excluded_for_language` participants. This gives us an expectation of `r round((nr_participants_initial - nr_excluded_for_language) / 9,2)` answers per scenario-description pair.
 
 ## Vizualize results
 
@@ -91,8 +90,7 @@ d = d %>%
                                              "neither P nor not-P", 
                                              "P and not-P",
                                              "not-Q", 
-                                             "P")),
-         answerRescaled = 0) %>% 
+                                             "P"))) %>% 
   group_by(id, scenarioLabel) %>%
   mutate(rank = rank(answer))
 

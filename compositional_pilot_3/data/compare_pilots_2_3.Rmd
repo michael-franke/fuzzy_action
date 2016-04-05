@@ -1,0 +1,105 @@
+---
+title: "Fuzzy action: compare 2nd & 3rd pilot "
+output: html_document
+---
+
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=8, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require(dplyr)
+require(ggplot2)
+require(reshape2)
+
+```
+
+```{r}
+d2 = read.csv('../../compositional_pilot_2/data/data.csv')
+d2 = droplevels(filter(d2, ! language %in% c("bulgarian", "Chinese", "Hindi") ))
+d2$workerID = unlist(sapply(1:nrow(d2), function(i) strsplit(as.character(d2$id[i]), ":")[[1]][1]))
+d2$assignmentID = unlist(sapply(1:nrow(d2), function(i) strsplit(as.character(d2$id[i]), ":")[[1]][2]))
+
+d2 = d2 %>%
+  mutate(id = as.numeric(factor(id)),
+         expressionLabel = factor(expressionLabel, ordered = TRUE, 
+                                  levels = c("Q", 
+                                             "not-P ", 
+                                             "Q and not-Q", 
+                                             "neither Q nor not-Q", 
+                                             "neither P nor Q", 
+                                             "neither P nor not-P", 
+                                             "P and not-P",
+                                             "not-Q", 
+                                             "P")),
+         answerRescaled = (answer - minValue)/ (maxValue-minValue)) %>% 
+  group_by(id, scenarioLabel) %>%
+  mutate(rank = rank(answer))
+
+
+d3 = read.csv('data.csv')
+d3 = droplevels(subset(d3, d3$id != "debug5B1ZMX:debugAJ5FRP"))
+d3 = droplevels(filter(d3, ! language %in% c("chinese", "Chinese", "english, vietnamese", "Spanish", "Telugu") ))
+d3$workerID = unlist(sapply(1:nrow(d3), function(i) strsplit(as.character(d3$id[i]), ":")[[1]][1]))
+d3$assignmentID = unlist(sapply(1:nrow(d3), function(i) strsplit(as.character(d3$id[i]), ":")[[1]][2]))
+
+d3 = d3 %>%
+  mutate(id = as.numeric(factor(id)),
+         expressionLabel = factor(expressionLabel, ordered = TRUE, 
+                                  levels = c("Q", 
+                                             "not-P ", 
+                                             "Q and not-Q", 
+                                             "neither Q nor not-Q", 
+                                             "neither P nor Q", 
+                                             "neither P nor not-P", 
+                                             "P and not-P",
+                                             "not-Q", 
+                                             "P"))) %>% 
+  group_by(id, scenarioLabel) %>%
+  mutate(rank = rank(answer))
+```
+
+
+## Correlate means from both experiments
+
+```{r}
+means_d2 = d2 %>% group_by(expressionLabel, scenarioLabel) %>%
+  summarize(mean_answer_d2 = mean(answerRescaled))
+means_d3 = d3 %>% group_by(expressionLabel, scenarioLabel) %>%
+  summarize(mean_answer_d3 = mean(answer))
+
+correlation_plot_data = as.data.frame(means_d2) %>% 
+  mutate(mean_answer_d3 = means_d3$mean_answer_d3)
+
+correltaion_plot = ggplot(correlation_plot_data, aes(x = mean_answer_d2, y = mean_answer_d3, color = expressionLabel)) +
+  geom_point() + geom_smooth(method=lm, se = FALSE)
+```
+
+Correlating mean answers for all expressions, we get a reasonable correlation:
+
+```{r}
+cor.test(correlation_plot_data$mean_answer_d2, 
+         correlation_plot_data$mean_answer_d3)
+```
+
+
+```{r}
+show(correltaion_plot)
+```
+
+
+Focus in on the interesting bit in this middle range:
+
+```{r}
+correlation_plot_data_restricted = filter(correlation_plot_data, expressionLabel %in% c("Q and not-Q", "neither Q nor not-Q", "neither P nor Q", "neither P nor not-P", "P and not-P"))
+
+correltaion_plot_restricted = ggplot(correlation_plot_data_restricted, aes(x = mean_answer_d2, y = mean_answer_d3, color = expressionLabel)) +
+  geom_point() + geom_smooth(method=lm, se = FALSE)
+show(correltaion_plot_restricted)
+```
+
+```{r}
+cor.test(correlation_plot_data_restricted$mean_answer_d2, 
+         correlation_plot_data_restricted$mean_answer_d3)
+```
+
+
