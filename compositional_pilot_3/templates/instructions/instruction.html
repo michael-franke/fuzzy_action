@@ -1,0 +1,88 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+    <hr>
+
+    <div class="instructions well">
+
+        <p>
+        In this experiment, you will be shown six descriptions that involve a quantity of some sort
+            (speed, price, duration, etc.). We are interested in your intuitive
+        guess about that quantity, once you have read the description.
+      </p>
+      <p>Some of the descriptions may sound more or less natural: please try to give your best guess anyway. After you have made a guess, we will also ask you to rate 
+          how natural the description sounds to you.
+        </p>
+<p>    Below we give some examples of how you might think about answering these questions. However, there are no right or wrong answers &mdash; the exact rating is up to you. </p>
+      <p>Note also that, in the main task, the sliders will be initialized to a random position. Please note that this position is randomly chosen and not meaningful. </p>
+        <script type="text/javascript">
+        //console.log(psiTurk.getInstructionIndicator())
+        </script>
+
+    </div>
+
+  <h1>Example</h1>
+    <hr>
+    
+    <div class="instructions well", style = "margin-top: 10px">
+            
+        <p><b>Background story:</b> Little Mike went to a friend's birthday party yesterday afternoon.</p>
+      
+        <p><b>Description:</b> Mike had an OK time.</p>        
+      
+        <p><b>Question:</b> How much did little Mike enjoy the party?</p>
+        <br>
+      <span style="color:grey">This description suggests that the party was not a whole lot of fun. So we might rate it like this:</span>
+      
+        <div style="width:80%", style="position:relative">
+          <input type="range" min="0" max="1" value="0.4" step="0.01" readonly/>
+          <span id="label_left">not at all</span>
+          <span id="label_right">enormously</span>
+        </div>
+        
+        
+        
+        <br>
+        <br>
+      <hr style="border: 1px solid #666;">
+        <br>
+        
+        <p><b>Background story:</b> Sue bought some flowers from a shop this morning.</p>
+      
+        <p><b>Description:</b> Sue thought the flowers were pretty.</p>        
+      
+        <p><b>Question:</b> How much did Sue like the flowers?</p>
+        <br>
+        
+        <span style="color:grey">The story suggests that she liked the flowers all right. So we might rate it like this:</span>
+      
+        <div style="width:80%", style="position:relative">
+          <input type="range" min="0" max="1" value="0.6" step="0.01" readonly />
+          <span id="label_left">not at all</span>
+          <span id="label_right">best thing ever</span>
+        </div>
+        
+<br>
+      
+        <script type="text/javascript">
+        //console.log(psiTurk.getInstructionIndicator())
+        </script>
+        
+    </div>
+  
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+            	<center>
+	                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue">
+	                Begin Experiment
+	                </button>
+	            </center>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+    </div>
+</div>
