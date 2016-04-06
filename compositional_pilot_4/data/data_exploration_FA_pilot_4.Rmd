@@ -1,0 +1,125 @@
+---
+title: "Fuzzy action: 4th pilot "
+output: html_document
+---
+
+
+```{r setup, include = FALSE, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=8, 
+                      echo=FALSE, warning=FALSE, message=FALSE)
+require(dplyr)
+require(ggplot2)
+require(reshape2)
+
+```
+
+```{r}
+d4 = read.csv('data.csv')
+nr_participants_initial = nlevels(factor(d4$id))
+```
+
+
+
+## Experiment
+
+
+
+`r nr_participants_initial` participants were recruited via MTurk on April 6 2016 and paid 1 US-Dollar compensation.
+
+Each participant interpreted 7 descriptions for 6 scenarios by by selecting a point on a 10-point Likert scale. Scenarios and description order was randomized. 
+
+Scenarios:
+
+1. US male: *tall* vs *short*
+2. bath: *hot* vs *cold*
+3. movie: *long* vs *short*
+4. laptop: *expensive* vs *cheap*
+5. band: *full* vs *empty*
+6. car: *fast* vs *slow*
+
+Descriptions (*no borderline contradictions*): 
+
+1. "Q", 
+2. "not-P ", 
+3. "neither Q nor not-P",
+4. "neither P nor Q", 
+5. "neither P nor not-Q",
+6. "not-Q", 
+7. "P"
+
+Here, "P" is either *tall* and "Q" is *short* for scenario "US male".
+
+## Questions of interest
+
+1. Is there a coherent rank order among these descriptions? What is it?
+    - e.g., is "not-Q" interpreted as higher than "neither P nor Q"?
+
+## Exclude some participants
+
+```{r}
+
+d4 = droplevels(filter(d4, ! language %in% c("chinese", "Chinese", "english, vietnamese", "Spanish", "Telugu") ))
+nr_excluded_for_language = nr_participants_initial - nlevels(factor(d4$id)) 
+
+d4$workerID = unlist(sapply(1:nrow(d4), function(i) strsplit(as.character(d4$id[i]), ":")[[1]][1]))
+d4$assignmentID = unlist(sapply(1:nrow(d4), function(i) strsplit(as.character(d4$id[i]), ":")[[1]][2]))
+
+```
+
+We exclude `r nr_excluded_for_language` participants as not being self-reported native English speakers. We have a total of `r nr_participants_initial - nr_excluded_for_language` participants. Since every participant interpreted every description for every scenario, that is then also the exact count of data-points for all conditions of interest.
+
+```{r}
+
+## data prep
+
+
+
+### reshuffle results
+A1 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel1"), measure.vars = c("answer1")) %>%
+  rename(expressionLabel = expressionLabel1)
+A2 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel2"), measure.vars = c("answer2")) %>%
+  rename(expressionLabel = expressionLabel2)
+A3 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel3"), measure.vars = c("answer3")) %>%
+  rename(expressionLabel = expressionLabel3)
+A4 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel4"), measure.vars = c("answer4")) %>%
+  rename(expressionLabel = expressionLabel4)
+A5 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel5"), measure.vars = c("answer5")) %>%
+  rename(expressionLabel = expressionLabel5)
+A6 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel6"), measure.vars = c("answer6")) %>%
+  rename(expressionLabel = expressionLabel6)
+A7 = melt(d4, id.vars = c("id", "scenarioLabel", "expressionLabel7"), measure.vars = c("answer7")) %>%
+  rename(expressionLabel = expressionLabel7)
+
+answers = rbind(A1, A2, A3, A4, A5, A6, A7) %>%
+  mutate(id = as.numeric(factor(id)),
+         expressionLabel = factor(expressionLabel, ordered = TRUE, 
+                                  levels = c("Q", 
+                                             "not-P ", 
+                                             "neither Q nor not-Q", 
+                                             "neither P nor Q", 
+                                             "neither P nor not-P", 
+                                             "not-Q", 
+                                             "P"))) %>% 
+  group_by(id, scenarioLabel) %>%
+  mutate(rank = rank(value))
+```
+
+# Visualize data
+
+The number of Likert degrees chosen per scenario and description:
+
+```{r}
+
+bar_plot = ggplot(answers, aes(x = value)) + geom_bar() + facet_grid(scenarioLabel ~ expressionLabel)
+show(bar_plot)
+
+```
+
+```{r}
+
+box_plot = ggplot(answers, aes(x = expressionLabel, y = value)) + geom_boxplot() + facet_grid(scenarioLabel ~ .) + coord_flip()
+show(box_plot)
+
+```
+
+

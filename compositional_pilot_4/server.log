@@ -332,3 +332,12 @@ OperationalError: (OperationalError) no such table: rating u'SELECT count(*) AS 
 2016-04-06 15:15:35,705 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
 2016-04-06 15:15:35,727 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
 2016-04-06 15:15:35,727 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:31,696 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:31,760 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:31,875 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:32,019 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:32,069 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:32,079 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:32,107 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:32,130 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:37:32,184 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
