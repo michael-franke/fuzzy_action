@@ -1,0 +1,35 @@
+[HIT Configuration]
+title = Fun Sentence Rating
+description = Rate a few short sentences. Quick Study!
+amt_keywords = sentence, language, fun, rate, easy
+lifetime = 24
+us_only = true
+approve_requirement = 80
+contact_email_on_error = fabian.dablander@student.uni-tuebingen.de
+ad_group = Rating Experiment
+psiturk_keywords = rating
+organization_name = University of Tübingen
+browser_exclude_rule = mobile, tablet
+
+[Database Parameters]
+database_url = sqlite:///participants.db
+table_name = rating
+
+[Server Parameters]
+host = localhost
+port = 22362
+cutoff_time = 30
+logfile = server.log
+loglevel = 2
+debug = true
+login_username = examplename
+login_pw = examplepassword
+threads = auto
+
+[Task Parameters]
+experiment_code_version = 1.0
+num_conds = 3
+num_counters = 3
+
+[Shell Parameters]
+launch_in_sandbox_mode = true

@@ -1,0 +1,239 @@
+2016-03-29 14:25:00,665 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2016-03-29 14:25:00 +0200] [7087] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment_server.py", line 49, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+    __import__(module)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 85, in <module>
+    init_db()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/db.py", line 23, in init_db
+    Base.metadata.create_all(bind=engine)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/schema.py", line 3404, in create_all
+    tables=tables)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1616, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1245, in _run_visitor
+    **kwargs).traverse_single(element)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/visitors.py", line 120, in traverse_single
+    return meth(obj, **kw)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/ddl.py", line 713, in visit_metadata
+    self.traverse_single(table, create_ok=True)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/visitors.py", line 120, in traverse_single
+    return meth(obj, **kw)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/ddl.py", line 732, in visit_table
+    self.connection.execute(CreateTable(table))
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 729, in execute
+    return meth(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/ddl.py", line 69, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 783, in _execute_ddl
+    compiled
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 958, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1159, in _handle_dbapi_exception
+    exc_info
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 951, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 436, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) table rating already exists u'\nCREATE TABLE rating (\n\tuniqueid VARCHAR(128) NOT NULL, \n\tassignmentid VARCHAR(128) NOT NULL, \n\tworkerid VARCHAR(128) NOT NULL, \n\thitid VARCHAR(128) NOT NULL, \n\tipaddress VARCHAR(128), \n\tbrowser VARCHAR(128), \n\tplatform VARCHAR(128), \n\tlanguage VARCHAR(128), \n\tcond INTEGER, \n\tcounterbalance INTEGER, \n\tcodeversion VARCHAR(128), \n\tbeginhit DATETIME, \n\tbeginexp DATETIME, \n\tendhit DATETIME, \n\tbonus FLOAT, \n\tstatus INTEGER, \n\tdatastring TEXT(4294967295), \n\tPRIMARY KEY (uniqueid)\n)\n\n' ()
+Traceback (most recent call last):
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment_server.py", line 49, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+    __import__(module)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 85, in <module>
+    init_db()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/db.py", line 23, in init_db
+    Base.metadata.create_all(bind=engine)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/schema.py", line 3404, in create_all
+    tables=tables)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1616, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1245, in _run_visitor
+    **kwargs).traverse_single(element)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/visitors.py", line 120, in traverse_single
+    return meth(obj, **kw)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/ddl.py", line 713, in visit_metadata
+    self.traverse_single(table, create_ok=True)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/visitors.py", line 120, in traverse_single
+    return meth(obj, **kw)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/ddl.py", line 732, in visit_table
+    self.connection.execute(CreateTable(table))
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 729, in execute
+    return meth(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/ddl.py", line 69, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 783, in _execute_ddl
+    compiled
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 958, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1159, in _handle_dbapi_exception
+    exc_info
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 951, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 436, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) table rating already exists u'\nCREATE TABLE rating (\n\tuniqueid VARCHAR(128) NOT NULL, \n\tassignmentid VARCHAR(128) NOT NULL, \n\tworkerid VARCHAR(128) NOT NULL, \n\thitid VARCHAR(128) NOT NULL, \n\tipaddress VARCHAR(128), \n\tbrowser VARCHAR(128), \n\tplatform VARCHAR(128), \n\tlanguage VARCHAR(128), \n\tcond INTEGER, \n\tcounterbalance INTEGER, \n\tcodeversion VARCHAR(128), \n\tbeginhit DATETIME, \n\tbeginexp DATETIME, \n\tendhit DATETIME, \n\tbonus FLOAT, \n\tstatus INTEGER, \n\tdatastring TEXT(4294967295), \n\tPRIMARY KEY (uniqueid)\n)\n\n' ()
+2016-03-29 14:25:00,741 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:00,847 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:00,848 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:00,928 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:12,774 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:12,814 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:12,839 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:12,916 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:13,033 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:13,051 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:13,075 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:13,132 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 14:25:13,211 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,799 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,861 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,863 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,873 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,873 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,884 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,884 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,885 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-29 17:32:44,890 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:02,882 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:02,960 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,100 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,211 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,217 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,253 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,291 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,336 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 13:43:03,375 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2016-03-30 14:23:57 +0200] [5643] [CRITICAL] WORKER TIMEOUT (pid:5648)
+[2016-03-30 14:23:57 +0200] [5643] [CRITICAL] WORKER TIMEOUT (pid:5651)
+[2016-03-30 14:23:57 +0200] [5643] [CRITICAL] WORKER TIMEOUT (pid:5652)
+[2016-03-30 14:23:57 +0200] [5643] [CRITICAL] WORKER TIMEOUT (pid:5653)
+[2016-03-30 14:23:57 +0200] [5643] [CRITICAL] WORKER TIMEOUT (pid:5654)
+[2016-03-30 14:23:57 +0200] [5643] [CRITICAL] WORKER TIMEOUT (pid:5655)
+2016-03-30 14:23:57,376 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:23:57,376 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:23:57,382 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:23:57,439 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:23:57,466 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:23:57,468 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,051 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,126 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,311 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,356 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,379 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,391 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,414 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,442 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 14:36:55,493 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:20,970 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:20,979 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,029 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,237 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,311 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,329 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,344 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,363 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-03-30 16:03:21,374 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,497 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,500 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,544 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,639 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,728 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,805 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,886 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:50,951 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 13:13:51,037 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,327 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,481 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,568 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,614 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,652 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,661 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,696 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,723 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:28:43,723 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,313 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,392 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,420 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,591 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,634 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,645 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,650 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,678 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-04 14:55:59,678 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:52,931 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,000 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,015 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,096 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,207 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,240 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,278 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,290 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:49:53,307 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,130 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,162 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,240 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,301 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,362 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,366 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,376 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,412 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-05 15:50:54,444 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:17,680 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:17,704 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:17,785 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:17,953 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:17,990 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:18,020 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:18,048 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:18,058 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 11:29:18,063 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+[2016-04-06 12:16:07 +0200] [58555] [CRITICAL] WORKER TIMEOUT (pid:58561)
+[2016-04-06 12:16:07 +0200] [58555] [CRITICAL] WORKER TIMEOUT (pid:58563)
+[2016-04-06 12:16:07 +0200] [58555] [CRITICAL] WORKER TIMEOUT (pid:58564)
+[2016-04-06 12:16:07 +0200] [58555] [CRITICAL] WORKER TIMEOUT (pid:58566)
+[2016-04-06 12:16:07 +0200] [58555] [CRITICAL] WORKER TIMEOUT (pid:58567)
+[2016-04-06 12:16:07 +0200] [58555] [CRITICAL] WORKER TIMEOUT (pid:58559)
+2016-04-06 12:16:07,424 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 12:16:07,430 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 12:16:07,436 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 12:16:07,442 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 12:16:07,445 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 12:16:07,451 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,219 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,258 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,294 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,495 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,513 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,515 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,543 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,568 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:32:57,588 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,238 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,338 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,356 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,465 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,500 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,602 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,648 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,671 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 14:36:18,691 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
