@@ -237,3 +237,98 @@ OperationalError: (OperationalError) table rating already exists u'\nCREATE TABL
 2016-04-06 14:36:18,648 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
 2016-04-06 14:36:18,671 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
 2016-04-06 14:36:18,691 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:14:55,463 Exception on /ad [GET]
+Traceback (most recent call last):
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/user_utils.py", line 15, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 245, in advertisement
+    filter(Participant.workerid == worker_id).\
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2640, in count
+    return self.from_self(col).scalar()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2426, in scalar
+    ret = self.one()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2395, in one
+    ret = list(self)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2438, in __iter__
+    return self._execute_and_instances(context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2453, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 729, in execute
+    return meth(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 322, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 826, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 958, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1159, in _handle_dbapi_exception
+    exc_info
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 951, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 436, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) no such table: rating u'SELECT count(*) AS count_1 \nFROM (SELECT rating.uniqueid AS rating_uniqueid, rating.assignmentid AS rating_assignmentid, rating.workerid AS rating_workerid, rating.hitid AS rating_hitid, rating.ipaddress AS rating_ipaddress, rating.browser AS rating_browser, rating.platform AS rating_platform, rating.language AS rating_language, rating.cond AS rating_cond, rating.counterbalance AS rating_counterbalance, rating.codeversion AS rating_codeversion, rating.beginhit AS rating_beginhit, rating.beginexp AS rating_beginexp, rating.endhit AS rating_endhit, rating.bonus AS rating_bonus, rating.status AS rating_status, rating.datastring AS rating_datastring \nFROM rating \nWHERE rating.assignmentid != ? AND rating.workerid = ?) AS anon_1' (u'debugSGLVTZ', u'debug5T4EKR')
+2016-04-06 15:15:07,572 Exception on /ad [GET]
+Traceback (most recent call last):
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/user_utils.py", line 15, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 245, in advertisement
+    filter(Participant.workerid == worker_id).\
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2640, in count
+    return self.from_self(col).scalar()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2426, in scalar
+    ret = self.one()
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2395, in one
+    ret = list(self)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2438, in __iter__
+    return self._execute_and_instances(context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/orm/query.py", line 2453, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 729, in execute
+    return meth(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 322, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 826, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 958, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1159, in _handle_dbapi_exception
+    exc_info
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 951, in _execute_context
+    context)
+  File "/Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 436, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) no such table: rating u'SELECT count(*) AS count_1 \nFROM (SELECT rating.uniqueid AS rating_uniqueid, rating.assignmentid AS rating_assignmentid, rating.workerid AS rating_workerid, rating.hitid AS rating_hitid, rating.ipaddress AS rating_ipaddress, rating.browser AS rating_browser, rating.platform AS rating_platform, rating.language AS rating_language, rating.cond AS rating_cond, rating.counterbalance AS rating_counterbalance, rating.codeversion AS rating_codeversion, rating.beginhit AS rating_beginhit, rating.beginexp AS rating_beginexp, rating.endhit AS rating_endhit, rating.bonus AS rating_bonus, rating.status AS rating_status, rating.datastring AS rating_datastring \nFROM rating \nWHERE rating.assignmentid != ? AND rating.workerid = ?) AS anon_1' (u'debugF1DAPA', u'debugSH1G7D')
+2016-04-06 15:15:35,394 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,510 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,616 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,628 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,691 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,705 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,705 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,727 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2016-04-06 15:15:35,727 /Users/micha/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js

@@ -215,11 +215,11 @@ var RatingExperiment = function() {
     
         
     // if there is no checked element
-//    if (answer.reduce(add, 0) < 7) {
-//      mess = 'Please select an interpretation for each description.';
-//      alert(mess);
-//      return false;
-//    }
+    if (answer.reduce(add, 0) < 7) {
+      mess = 'Please select an interpretation for each description.';
+      alert(mess);
+      return false;
+    }
 
     // add the ratings to the trial data & save to server
     trialData = trialData.concat(radioValues[0],
