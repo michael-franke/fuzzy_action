@@ -94,6 +94,8 @@ var RatingExperiment = function() {
     // if there are items left, start a new trial
     if (count < allTrials.length) {
       
+      expresssionShuffle = _.shuffle([0,1,2,3,6,7,8]);
+      
       resetRadio();
       
       var trial = allTrials[count];  
