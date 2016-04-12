@@ -10,6 +10,7 @@ knitr::opts_chunk$set(fig.width=8, fig.height=8,
 require(dplyr)
 require(ggplot2)
 require(reshape2)
+library(BEST)
 
 ```
 
@@ -24,7 +25,7 @@ nr_participants_initial = nlevels(factor(d4$id))
 
 
 
-`r nr_participants_initial` participants were recruited via MTurk on April 6 2016 and paid 1 US-Dollar compensation.
+`r nr_participants_initial` participants were recruited via MTurk on April 6 2016 and April 11 2016 and paid 0.60 US-Dollar compensation.
 
 Each participant interpreted 7 descriptions for 6 scenarios by by selecting a point on a 10-point Likert scale. Scenarios and description order was randomized. 
 
@@ -115,6 +116,8 @@ show(bar_plot)
 
 ```
 
+Boxplot of Likert degree choices:
+
 ```{r}
 
 box_plot = ggplot(answers, aes(x = expressionLabel, y = value)) + geom_boxplot() + facet_grid(scenarioLabel ~ .) + coord_flip()
@@ -122,4 +125,59 @@ show(box_plot)
 
 ```
 
+Means of choices:
 
+```{r}
+
+means_data = answers %>% group_by(scenarioLabel, expressionLabel) %>%
+  summarize(mean = mean(value))
+
+means_plot = ggplot(means_data, aes(x = expressionLabel, y = mean)) + geom_bar(stat = "identity") +
+  facet_grid(~ scenarioLabel) +  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+show(means_plot)
+
+```
+
+# Comparison of means
+
+Let's use a t-test to compare means of expressions adjacent on the assumed ordering. (I'm excluding scenario "band" here, but it doesn't matter).
+
+```{r, echo = TRUE}
+t.test(filter(answers, scenarioLabel != "band", expressionLabel == "neither Q nor not-Q")$value,
+       filter(answers, scenarioLabel != "band", expressionLabel == "neither P nor Q")$value)
+```
+
+```{r, echo = TRUE}
+t.test(filter(answers, scenarioLabel != "band", expressionLabel == "neither P nor Q")$value,
+       filter(answers, scenarioLabel != "band", expressionLabel == "neither P nor not-P")$value)
+```
+
+Let's do this a little nicer, using regression with [forward difference coding](http://www.ats.ucla.edu/stat/r/library/contrast_coding.htm), so that we compare ratings of "Q" to "not-Q", then "not-Q" to "neither Q nor not-Q" and so on.
+
+```{r, echo = TRUE}
+
+forward_difference = function (n){
+  i = 1
+  x <- c( rep((n-i)/n, i), rep(-i/n,n-i))
+  y <- x
+  for (i in 2:(n-1)) {
+    x <- c( rep((n-i)/n, i), rep(-(i)/n,n-i))
+    y <- cbind(y,x)
+  }
+  return (y)
+}
+
+contrasts(answers$expressionLabel) = forward_difference(nlevels(answers$expressionLabel))
+summary(glm(value ~ expressionLabel + scenarioLabel, 
+            data = answers
+            # data = filter(answers, scenarioLabel != "band")
+            ))
+
+```
+
+This tells us that, **if we treat answers as metric variables**, there is a difference between all adjacent expressions (from the assumed ordering), except that:
+
+1. "neither Q nor not-Q" is not significantly different from "neither P nor Q", and
+2. "neither P nor Q" is not significantly different from "neither P nor not-P".
+
+The analysis also tells us that the ordering result is the same for all scenarios!
